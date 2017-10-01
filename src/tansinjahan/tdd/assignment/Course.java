@@ -26,5 +26,13 @@ public class Course {
 	public String title() {
 		return courseTitle;
 	}
+	public int getCourseCode(){
+		if((mycode/100000) !=0){
+			return mycode;	
+		}
+		else 
+			return 0;
+	}
+	
 
 }

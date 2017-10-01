@@ -28,5 +28,10 @@ public class CourseTest {
 		String getTitle = course.title();
 		assertEquals("Object Oriented Programming", getTitle);
 	}
+	@Test
+	public void courseCodeTest(){
+		assertEquals(113004,course.getCourseCode());
+	}
+	
 
 }
