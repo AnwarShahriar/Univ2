@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 import tansinjahan.tdd.assignment.Course;
+import tansinjahan.tdd.assignment.Student;
 
 public class CourseTest {
 	
@@ -32,6 +33,15 @@ public class CourseTest {
 	public void courseCodeTest(){
 		assertEquals(113004,course.getCourseCode());
 	}
-	
+	@Test
+	public void courseHasZeroStudent(){
+		assertEquals(0, course.getStudents().size());
+	}
+	@Test
+	public void courseHasStudent(){
+		course.add(new Student());
+		course.add(new Student());
+		assertEquals(2, course.getStudents().size());
+	}
 
 }
