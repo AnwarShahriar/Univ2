@@ -13,6 +13,7 @@ public class Course {
 	String courseTitle;
 	int mycode;
 	List<Student> students=new ArrayList<Student>();
+	List<Integer> prerequisites= new ArrayList<Integer>();
 
 	public Course(boolean enforceprereq, int mid, int assign, boolean hasFinal,
 			int capsize, String title, int courseCode) throws IllegalArgumentException{
@@ -58,8 +59,16 @@ public class Course {
 		return students;
 	}
 
-	public void add(Student std) {
+	public void addStudent(Student std) {
 		students.add(std);
+	}
+	public List<Integer> prerequisitesOfCourse(){
+		return prerequisites;
+	}
+
+	public void addPrerequisite(int prerequisiteCode) {
+		prerequisites.add(prerequisiteCode);
+		
 	}
 
 }

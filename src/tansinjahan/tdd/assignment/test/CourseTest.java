@@ -39,9 +39,18 @@ public class CourseTest {
 	}
 	@Test
 	public void courseHasStudent(){
-		course.add(new Student());
-		course.add(new Student());
+		course.addStudent(new Student());
+		course.addStudent(new Student());
 		assertEquals(2, course.getStudents().size());
+	}
+	@Test
+	public void courseHasZeroPreRequisite(){
+		assertEquals(0,course.prerequisitesOfCourse().size());
+	}
+	@Test
+	public void courseHasPreRequisites(){
+		course.addPrerequisite(113047);
+		assertEquals(1,course.prerequisitesOfCourse().size());
 	}
 
 }
