@@ -14,8 +14,8 @@ public class CourseTest {
 	public void setup() {
 		course = new Course(
 				true, // enforceprereq
-				1, // mid
-				2, // assign
+				0, // mid
+				0, // assign
 				true, // hasFinal
 				30, // capsize
 				"Object Oriented Programming", // courseTitle

@@ -24,7 +24,16 @@ public class Course {
 	}
 
 	public String title() {
-		return courseTitle;
+		if(midterm==0 && assignments==0 && hasFinal==false){
+			String C_grade_Element="your course must have at least one grade element";
+			return C_grade_Element;
+		}
+		else 
+			if((midterm>0 && midterm<=2)||(assignments>=0&& assignments<=5)||hasFinal==true){ 
+				return courseTitle;
+				}
+			else
+				return "course grade is not correct";
 	}
 	public int getCourseCode(){
 		if((mycode/100000) !=0){
