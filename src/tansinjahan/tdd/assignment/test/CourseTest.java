@@ -16,7 +16,7 @@ public class CourseTest {
 		course = new Course(
 				true, // enforceprereq
 				0, // mid
-				0, // assign
+				2, // assign
 				true, // hasFinal
 				30, // capsize
 				"Object Oriented Programming", // courseTitle
@@ -51,6 +51,11 @@ public class CourseTest {
 	public void courseHasPreRequisites(){
 		course.addPrerequisite(113047);
 		assertEquals(1,course.prerequisitesOfCourse().size());
+	}
+	@Test
+	public void courseAssignmentWeight(){
+		course.setWeightOfAssignment(2,10);
+		assertEquals(10, course.weightOfAssignment(2));
 	}
 
 }

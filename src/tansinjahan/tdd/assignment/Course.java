@@ -14,7 +14,8 @@ public class Course {
 	int mycode;
 	List<Student> students=new ArrayList<Student>();
 	List<Integer> prerequisites= new ArrayList<Integer>();
-
+	int[] weightOfassignments;
+	
 	public Course(boolean enforceprereq, int mid, int assign, boolean hasFinal,
 			int capsize, String title, int courseCode) throws IllegalArgumentException{
 		validateCourseCode(courseCode);
@@ -27,6 +28,7 @@ public class Course {
 		this.capsize = capsize;
 		this.courseTitle = title;
 		this.mycode = courseCode;
+		weightOfassignments= new int[assign];
 	}
 
 	private void validateCourseGradeElement(int mid, int assign,
@@ -68,7 +70,14 @@ public class Course {
 
 	public void addPrerequisite(int prerequisiteCode) {
 		prerequisites.add(prerequisiteCode);
-		
 	}
+	public void setWeightOfAssignment(int assignmentNumber, int weight){
+		weightOfassignments[assignmentNumber - 1] = weight;
+	}
+
+	public int weightOfAssignment(int assignmentNumber) {
+		return weightOfassignments[assignmentNumber - 1];
+	}
+	
 
 }
