@@ -57,5 +57,15 @@ public class CourseTest {
 		course.setWeightOfAssignment(1, 10);
 		assertEquals(10,course.weightOfAssignment(1));
 	}
+	@Test
+	public void courseMidtermWeight(){
+		course.setWeightOfMidterm(1, 20);
+		assertEquals(20,course.weightOfMidterms(1));
+	}
+	@Test
+	public void courseFinalWeight(){
+		course.setWeightOfFinal(50);
+		assertEquals(50,course.weightOfFinal());
+	}
 
 }
