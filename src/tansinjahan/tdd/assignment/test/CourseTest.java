@@ -15,7 +15,7 @@ public class CourseTest {
 	public void setup() {
 		course = new Course(
 				true, // enforceprereq
-				0, // mid
+				1, // mid
 				2, // assign
 				true, // hasFinal
 				30, // capsize
@@ -54,8 +54,8 @@ public class CourseTest {
 	}
 	@Test
 	public void courseAssignmentWeight(){
-		course.setWeightOfAssignment(2,10);
-		assertEquals(10, course.weightOfAssignment(2));
+		course.setWeightOfAssignment(1, 10);
+		assertEquals(10,course.weightOfAssignment(1));
 	}
 
 }

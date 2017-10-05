@@ -15,6 +15,8 @@ public class Course {
 	List<Student> students=new ArrayList<Student>();
 	List<Integer> prerequisites= new ArrayList<Integer>();
 	int[] weightOfassignments;
+	int[] weightOfMidterms;
+	int weightOfFinal;
 	
 	public Course(boolean enforceprereq, int mid, int assign, boolean hasFinal,
 			int capsize, String title, int courseCode) throws IllegalArgumentException{
@@ -29,6 +31,7 @@ public class Course {
 		this.courseTitle = title;
 		this.mycode = courseCode;
 		weightOfassignments= new int[assign];
+		weightOfMidterms = new int[mid];
 	}
 
 	private void validateCourseGradeElement(int mid, int assign,
@@ -71,13 +74,61 @@ public class Course {
 	public void addPrerequisite(int prerequisiteCode) {
 		prerequisites.add(prerequisiteCode);
 	}
+	
+	private int totalAssignmentWeight() {
+		int res = 0;
+		for (int weight : weightOfassignments) {
+			res += weight;
+		}
+		return res;
+	}
+	
+	private int totalMidtermWeight() {
+		int res = 0;
+		for (int weight : weightOfMidterms) {
+			res += weight;
+		}
+		return res;
+	}
+	
 	public void setWeightOfAssignment(int assignmentNumber, int weight){
-		weightOfassignments[assignmentNumber - 1] = weight;
+		if (totalWeight() < 100 && totalWeight() + weight <= 100) {
+			weightOfassignments[assignmentNumber - 1] = weight;
+		} else {
+			throw new IllegalStateException("Weights cannot go above 100");
+		}
+	}
+	
+	public void setWeightOfMidterm(int midtermNumber, int weight) {
+		if (totalWeight() < 100 && totalWeight() + weight <= 100) {
+			weightOfMidterms[midtermNumber - 1] = weight;
+		} else {
+			throw new IllegalStateException("Weights cannot go above 100");
+		}
+	}
+	
+	public void setWeightOfFinal(int weight) {
+		if (totalWeight() < 100 && totalWeight() + weight <= 100) {
+			weightOfFinal = weight;
+		} else {
+			throw new IllegalStateException("Weights cannot go above 100");
+		}
+	}
+	
+	private int totalWeight() {
+		return totalAssignmentWeight() + totalMidtermWeight() + weightOfFinal;
 	}
 
 	public int weightOfAssignment(int assignmentNumber) {
 		return weightOfassignments[assignmentNumber - 1];
 	}
 	
+	public int weightOfMidterms(int midNumber) {
+		return weightOfMidterms[midNumber - 1];
+	}
+	
+	public int weightOfFinal() {
+		return weightOfFinal;
+	}
 
 }
