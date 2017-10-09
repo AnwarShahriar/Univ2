@@ -35,7 +35,8 @@ public class CourseTest {
 	 		} catch (Exception e) {
 	 			e.printStackTrace();
 	 		}
-	
+	 		assertEquals(true, course != null);
+	}
 	//@Before
 	/*public void setup() {
 		course = new Course(
