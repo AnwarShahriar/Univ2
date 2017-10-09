@@ -13,8 +13,5 @@ public class UniversityTest {
 		University versity = new University();
 		assertEquals("Carleton", versity.getName());
 	}
-	public void getMethod()
-	{
-		
-	}
+	
 }

@@ -2,10 +2,11 @@ package tansinjahan.tdd.assignment;
 
 import java.util.ArrayList;
 import java.util.List;
+import tansinjahan.tdd.assignment.Student;
 
 public class Course {
 
-	boolean enforcePrerequisites;
+	/*boolean enforcePrerequisites;
 	int midterm;
 	int assignments;
 	boolean hasFinal;
@@ -13,28 +14,26 @@ public class Course {
 	String courseTitle;
 	int mycode;
 	List<Student> students=new ArrayList<Student>();
+	List<Integer> marksOfStudent= new ArrayList<Integer>();
 	List<Integer> prerequisites= new ArrayList<Integer>();
 	int[] weightOfassignments;
 	int[] weightOfMidterms;
-	int weightOfFinal;
+	int weightOfFinal;*/
 	
-	public Course(boolean enforceprereq, int mid, int assign, boolean hasFinal,
-			int capsize, String title, int courseCode) throws IllegalArgumentException{
-		validateCourseCode(courseCode);
-		validateCourseGradeElement(mid, assign, hasFinal);
-		
-		this.enforcePrerequisites = enforceprereq;
-		this.midterm = mid;
-		this.assignments = assign;
-		this.hasFinal = hasFinal;
-		this.capsize = capsize;
-		this.courseTitle = title;
-		this.mycode = courseCode;
-		weightOfassignments= new int[assign];
-		weightOfMidterms = new int[mid];
-	}
-
-	private void validateCourseGradeElement(int mid, int assign,
+	private String title;
+	private int capsize;
+	private int code;
+	private boolean hasAFinal;
+	private int numberOfAssignments;
+	private int numberOfMidterms;
+	private boolean enforcePrereqs;
+	
+	public Course(String title, int capsize) {
+		 		this.title = title;
+		 		this.capsize = capsize;
+		 	}
+	
+	/*private void validateCourseGradeElement(int mid, int assign,
 			boolean hasFinal)throws IllegalArgumentException {
 		if(mid==0 && assign==0 && hasFinal==false){
 			throw new IllegalArgumentException("your course must have at least one grade element");
@@ -130,5 +129,9 @@ public class Course {
 	public int weightOfFinal() {
 		return weightOfFinal;
 	}
+
+	public int markForStudent(Student student) {
+		return student.;
+	}*/
 
 }

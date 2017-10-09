@@ -3,16 +3,41 @@ package tansinjahan.tdd.assignment.test;
 import static org.junit.Assert.*;
 
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import tansinjahan.tdd.assignment.Course;
+import tansinjahan.tdd.assignment.CourseInteractor;
 import tansinjahan.tdd.assignment.Student;
+import tansinjahan.tdd.assignment.University;
 
 public class CourseTest {
+	private static University versity;
 	
-	Course course = null;
+	@BeforeClass
+	 	public static void setup() {
+	 		versity = new University();
+	 	}
+	@Test
+	 	public void createCourse() {
+	 		CourseInteractor interactor = new CourseInteractor(versity);
+	 		Course course = null;
+	 		try {
+	 			course = interactor.createCourse(
+	 								"clerk", // user
+	 								"CS", // title,
+	 								110022, // code
+	 								26, // capsize
+	 								true, // hasAFinal
+	 								2, // numberOfAssignments,
+	 								1, // numberOfMidterms,
+	 								true // enforcePrereqs)
+	 								);
+	 		} catch (Exception e) {
+	 			e.printStackTrace();
+	 		}
 	
-	@Before
-	public void setup() {
+	//@Before
+	/*public void setup() {
 		course = new Course(
 				true, // enforceprereq
 				1, // mid
@@ -39,8 +64,8 @@ public class CourseTest {
 	}
 	@Test
 	public void courseHasStudent(){
-		course.addStudent(new Student());
-		course.addStudent(new Student());
+		course.addStudent(new Student(11,"Shamim","fulltime"));
+		course.addStudent(new Student(12,"Tithy","parttime"));
 		assertEquals(2, course.getStudents().size());
 	}
 	@Test
@@ -67,5 +92,10 @@ public class CourseTest {
 		course.setWeightOfFinal(50);
 		assertEquals(50,course.weightOfFinal());
 	}
+	@Test
+	public void studentCourseMarks(){
+		course.markForStudent();
+		assertEquals();
+	}*/
 
 }
