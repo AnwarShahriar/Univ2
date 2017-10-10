@@ -20,15 +20,15 @@ public class CourseInteractor {
 		validateGradeElems(hasAFinal, numberOfAssignments, numberOfMidTerms);
 		validateCapsize(capsize);
 		 		
-		if (versity.hasCourseExist(code)) 
+		if (versity.hasCourseExists(code)) 
 		 			throw new IllegalArgumentException("Course already exist");
 		 		
 		Course course = versity.createCourse(title, capsize);
 		course.setCode(code);
-		course.setHasAFinal(hasAFinal);
+		/*course.setHasAFinal(hasAFinal);
 		course.setNumberOfAssignments(numberOfAssignments);
 		course.setNumberOfMidterms(numberOfMidTerms);
-		course.enforcePrereqs(enforcePrereqs);
+		course.enforcePrereqs(enforcePrereqs);*/
 		 		
 		return course;
 	}

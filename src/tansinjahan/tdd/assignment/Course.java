@@ -33,6 +33,15 @@ public class Course {
 		 		this.capsize = capsize;
 		 	}
 	
+	public void setCode(int code) {
+		this.code = code;
+	}
+	
+	public int getCode() {
+		return code; 
+	}
+	
+	
 	/*private void validateCourseGradeElement(int mid, int assign,
 			boolean hasFinal)throws IllegalArgumentException {
 		if(mid==0 && assign==0 && hasFinal==false){

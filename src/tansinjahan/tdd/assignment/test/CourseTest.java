@@ -11,16 +11,24 @@ import tansinjahan.tdd.assignment.Student;
 import tansinjahan.tdd.assignment.University;
 
 public class CourseTest {
+	private static final Course NULL = null;
+	private CourseInteractor interactor;
+
 	private static University versity;
 	
 	@BeforeClass
 	 	public static void setup() {
 	 		versity = new University();
 	 	}
+	
+	@Before
+	 	public void prepare() {
+	 		interactor = new CourseInteractor(versity);
+	 	}
 	@Test
 	 	public void createCourse() {
-	 		CourseInteractor interactor = new CourseInteractor(versity);
-	 		Course course = null;
+	 	    interactor = new CourseInteractor(versity);
+	 		Course course= NULL;
 	 		try {
 	 			course = interactor.createCourse(
 	 								"clerk", // user
@@ -36,6 +44,20 @@ public class CourseTest {
 	 			e.printStackTrace();
 	 		}
 	 		assertEquals(true, course != null);
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	 	public void invalidCourseIdThrowsException() {
+	 		interactor.createCourse(
+	 								"clerk", // user
+	 								"CS", // title,
+	 								010022, // code
+	 								26, // capsize
+	 								true, // hasAFinal
+	 								2, // numberOfAssignments,
+	 								1, // numberOfMidterms,
+	 								true // enforcePrereqs)
+	 								);
 	}
 	//@Before
 	/*public void setup() {
