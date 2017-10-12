@@ -59,66 +59,18 @@ public class CourseTest {
 	 								true // enforcePrereqs)
 	 								);
 	}
-	//@Before
-	/*public void setup() {
-		course = new Course(
-				true, // enforceprereq
-				1, // mid
-				2, // assign
-				true, // hasFinal
-				30, // capsize
-				"Object Oriented Programming", // courseTitle
-				113004 // courseCode
-			);  
-	}
-	
-	@Test
-	public void courseTitleTest() {
-		String getTitle = course.title();
-		assertEquals("Object Oriented Programming", getTitle);
-	}
-	@Test
-	public void courseCodeTest(){
-		assertEquals(113004,course.getCourseCode());
-	}
-	@Test
-	public void courseHasZeroStudent(){
-		assertEquals(0, course.getStudents().size());
-	}
-	@Test
-	public void courseHasStudent(){
-		course.addStudent(new Student(11,"Shamim","fulltime"));
-		course.addStudent(new Student(12,"Tithy","parttime"));
-		assertEquals(2, course.getStudents().size());
-	}
-	@Test
-	public void courseHasZeroPreRequisite(){
-		assertEquals(0,course.prerequisitesOfCourse().size());
-	}
-	@Test
-	public void courseHasPreRequisites(){
-		course.addPrerequisite(113047);
-		assertEquals(1,course.prerequisitesOfCourse().size());
-	}
-	@Test
-	public void courseAssignmentWeight(){
-		course.setWeightOfAssignment(1, 10);
-		assertEquals(10,course.weightOfAssignment(1));
-	}
-	@Test
-	public void courseMidtermWeight(){
-		course.setWeightOfMidterm(1, 20);
-		assertEquals(20,course.weightOfMidterms(1));
-	}
-	@Test
-	public void courseFinalWeight(){
-		course.setWeightOfFinal(50);
-		assertEquals(50,course.weightOfFinal());
-	}
-	@Test
-	public void studentCourseMarks(){
-		course.markForStudent();
-		assertEquals();
-	}*/
+	@Test(expected = IllegalArgumentException.class)
+ 		public void invalidCourseFinalThrowsException() {
+ 		interactor.createCourse(
+ 								"clerk", // user
+ 								"CS", // title,
+ 								110022, // code
+ 								26, // capsize
+ 								false, // hasAFinal
+ 								0, // numberOfAssignments,
+ 								0, // numberOfMidterms,
+ 								true // enforcePrereqs)
+ 								);
+}
 
 }

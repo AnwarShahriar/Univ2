@@ -25,10 +25,7 @@ public class CourseInteractor {
 		 		
 		Course course = versity.createCourse(title, capsize);
 		course.setCode(code);
-		/*course.setHasAFinal(hasAFinal);
-		course.setNumberOfAssignments(numberOfAssignments);
-		course.setNumberOfMidterms(numberOfMidTerms);
-		course.enforcePrereqs(enforcePrereqs);*/
+		course.setHasAFinal(hasAFinal);
 		 		
 		return course;
 	}
