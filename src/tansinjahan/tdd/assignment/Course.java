@@ -49,6 +49,11 @@ public class Course {
 		this.numberOfAssignments = assignments; 
 		
 	}
+
+	public void setMidterm(int midterm) {
+		this.numberOfMidterms= midterm;
+		
+	}
 	
 	
 

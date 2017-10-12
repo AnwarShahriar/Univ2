@@ -27,6 +27,7 @@ public class CourseInteractor {
 		course.setCode(code);
 		course.setHasAFinal(hasAFinal);
 		course.setAssignments(numberOfAssignments);
+		course.setMidterm(numberOfMidTerms);
 		
 		return course;
 	}
