@@ -26,7 +26,8 @@ public class CourseInteractor {
 		Course course = versity.createCourse(title, capsize);
 		course.setCode(code);
 		course.setHasAFinal(hasAFinal);
-		 		
+		course.setAssignments(numberOfAssignments);
+		
 		return course;
 	}
 	private void validateCapsize(int capsize) {
@@ -43,6 +44,8 @@ public class CourseInteractor {
 	private void validateGradeElems(boolean hasAFinal, int numberOfAssignments, int numberOfMidTerms) {
 		 		if (!hasAFinal && numberOfAssignments == 0 && numberOfMidTerms == 0)
 		 			throw new IllegalArgumentException("There must be one grade element");
+		 		else if(numberOfAssignments > 5 || numberOfMidTerms > 2)
+		 			throw new IllegalArgumentException("Number of assignments or midterm exceeds");
 		 	}
 
 }

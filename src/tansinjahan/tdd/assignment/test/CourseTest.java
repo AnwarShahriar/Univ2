@@ -71,6 +71,19 @@ public class CourseTest {
  								0, // numberOfMidterms,
  								true // enforcePrereqs)
  								);
-}
+	}
+	@Test(expected = IllegalArgumentException.class)
+		public void invalidCourseAssignmentThrowsException() {
+		interactor.createCourse(
+								"clerk", // user
+								"CS", // title,
+								110022, // code
+								26, // capsize
+								false, // hasAFinal
+								6, // numberOfAssignments,
+								0, // numberOfMidterms,
+								true // enforcePrereqs)
+								);
 
+	}
 }

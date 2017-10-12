@@ -40,8 +40,14 @@ public class Course {
 	public int getCode() {
 		return code; 
 	}
+	
 	public void setHasAFinal(boolean hasfinal){
 		this.hasAFinal=hasfinal;
+	}
+
+	public void setAssignments(int assignments) {
+		this.numberOfAssignments = assignments; 
+		
 	}
 	
 	
