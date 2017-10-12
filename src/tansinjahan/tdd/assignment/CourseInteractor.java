@@ -28,11 +28,12 @@ public class CourseInteractor {
 		course.setHasAFinal(hasAFinal);
 		course.setAssignments(numberOfAssignments);
 		course.setMidterm(numberOfMidTerms);
+		course.setPrerequisites(enforcePrereqs);
 		
 		return course;
 	}
 	private void validateCapsize(int capsize) {
-		// TODO Auto-generated method stub
+		
 		if (capsize <= 25)
 			 		throw new IllegalArgumentException("capsize must be greater than 25");
 	}

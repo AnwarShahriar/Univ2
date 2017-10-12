@@ -42,7 +42,7 @@ public class Course {
 	}
 	
 	public void setHasAFinal(boolean hasfinal){
-		this.hasAFinal=hasfinal;
+		this.hasAFinal = hasfinal;
 	}
 
 	public void setAssignments(int assignments) {
@@ -51,10 +51,13 @@ public class Course {
 	}
 
 	public void setMidterm(int midterm) {
-		this.numberOfMidterms= midterm;
+		this.numberOfMidterms = midterm;
 		
 	}
-	
-	
+
+	public void setPrerequisites(boolean prerequisites) {
+		this.enforcePrereqs = prerequisites;
+		
+	}
 
 }
