@@ -143,4 +143,57 @@
 
 @2017-10-17 23:09:07 INFO  LibServer:80 - Client: 62036 Exits
 @2017-10-17 23:09:07 INFO  LibServer:84 - Client : 62036Exits
+@2017-10-18 11:37:44 INFO  LibServer:26 - Binding to port 5050
+@2017-10-18 11:37:44 INFO  LibServer:51 - Waiting for a client ...
+@2017-10-18 11:37:44 INFO  LibServer:40 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5050] 10
+@2017-10-18 11:38:17 INFO  LibServer:60 - Client accepted : Client Address : [/127.0.0.1:50359] Client Socket: [50359 ]
+
+@2017-10-18 11:38:17 INFO  LibServer:51 - Waiting for a client ...
+@2017-10-18 11:38:17 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__50359
+@2017-10-18 11:38:28 INFO  LibServer:90 - Input from 127.0.0.1:50359 Hello
+@2017-10-18 11:38:28 INFO  LibServer:107 - Output to 127.0.0.1:50359 Who Are you?Clerk or User?
+
+@2017-10-18 11:38:31 INFO  LibServer:90 - Input from 127.0.0.1:50359 Clerk
+@2017-10-18 11:38:31 INFO  LibServer:99 - Output to 127.0.0.1:50359 Please Input The Password:
+
+@2017-10-18 11:38:33 INFO  LibServer:90 - Input from 127.0.0.1:50359 admin
+@2017-10-18 11:38:33 INFO  LibServer:99 - Output to 127.0.0.1:50359 What can I do for you?Menu:Create Student/Course
+
+@2017-10-18 11:38:41 INFO  LibServer:90 - Input from 127.0.0.1:50359 Student
+@2017-10-18 11:38:41 INFO  LibServer:99 - Output to 127.0.0.1:50359 Please select from the menu.Menu:Create Student/Course
+
+@2017-10-18 15:19:15 INFO  ServerThread:60 - Class: ServerThread: Exception thrown : Connection reset 
+
+@2017-10-18 17:43:50 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-18 17:43:50 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-18 17:43:50 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-18 17:43:50 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-18 17:43:50 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-18 17:43:50 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-18 17:43:50 INFO  CourseInteractor:31 - Course is created with title CS and capsize 26
+@2017-10-18 17:44:04 INFO  LibServer:26 - Binding to port 5050
+@2017-10-18 17:44:04 INFO  LibServer:40 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5050] 10
+@2017-10-18 17:44:04 INFO  LibServer:51 - Waiting for a client ...
+@2017-10-18 17:44:47 INFO  LibServer:60 - Client accepted : Client Address : [/127.0.0.1:62081] Client Socket: [62081 ]
+
+@2017-10-18 17:44:47 INFO  LibServer:51 - Waiting for a client ...
+@2017-10-18 17:44:47 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__62081
+@2017-10-18 17:44:51 INFO  LibServer:90 - Input from 127.0.0.1:62081 Hello
+@2017-10-18 17:44:51 INFO  LibServer:107 - Output to 127.0.0.1:62081 Who Are you?Clerk or User?
+
+@2017-10-18 17:44:57 INFO  LibServer:90 - Input from 127.0.0.1:62081 User
+@2017-10-18 17:44:57 INFO  LibServer:99 - Output to 127.0.0.1:62081 Please Input Username and Password:'username,password'
+
+@2017-10-18 17:45:12 INFO  LibServer:90 - Input from 127.0.0.1:62081 Tansin@gmail.com,1234
+@2017-10-18 17:45:13 INFO  String:21 - Operation:Initialize StudentTable;StudentTable: null
+@2017-10-18 17:45:13 INFO  LibServer:99 - Output to 127.0.0.1:62081 What can I do for you? Specify what can I do ----->
+
+@2017-10-18 17:46:35 INFO  LibServer:90 - Input from 127.0.0.1:62081 create
+@2017-10-18 17:46:35 INFO  LibServer:99 - Output to 127.0.0.1:62081 
+
+@2017-10-18 17:46:36 INFO  LibServer:90 - Input from 127.0.0.1:62081 
+@2017-10-18 17:46:36 INFO  LibServer:99 - Output to 127.0.0.1:62081 Who Are you?Clerk or User?
+
+@2017-10-18 17:46:46 INFO  LibServer:80 - Client: 62081 Exits
+@2017-10-18 17:46:46 INFO  LibServer:84 - Client : 62081Exits
 @
