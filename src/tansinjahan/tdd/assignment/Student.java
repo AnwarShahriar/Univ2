@@ -33,16 +33,30 @@ public class Student {
 			maxCourseCount = 4;
 		}
 		else 
-			 if(studentStatus == "part time")
-				 maxCourseCount = 2;
-			 else
-				 maxCourseCount = 0;
+			maxCourseCount = 2;
+			
 		
 	}
 	
-	public String registerCourse(Course course){
+	public void registerCourse(Course course){
+		if (alreadyRegistered(course.getCode())) {
+						throw new IllegalStateException("Already registered for course");
+					}
+					
+					if (courseIDs.size() == maxCourseCount) {
+						throw new IllegalStateException(String.format("Max course count for %s student is %d", (fullTime ? "full time" : "part time"), maxCourseCount));
+					}
+		
 		courseIDs.add(course.getCode());
-		return "student registered for course";
+	}
+
+	private boolean alreadyRegistered(int code) {
+		for (int id : courseIDs) {
+						if (id == code) {
+							return true;
+						}
+					}
+					return false;
 	}
 
 	public List<Course> currentCourses() {

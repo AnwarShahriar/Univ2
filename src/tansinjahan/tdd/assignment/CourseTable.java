@@ -30,4 +30,17 @@ import java.util.List;
 		}
 		return res;
 	}
+	
+	public Course findCourseByCode(int code) {
+				for (Course c : courses) {
+					if (c.getCode() == code) {
+						return c;
+					}
+				}
+				return null;
+			}
+	
+	public void clear(){
+		courses.clear();
+	}
 }
