@@ -12,7 +12,7 @@ public class Student {
 	private boolean fullTime;
 	private int maxCourseCount;
 	
-	List<Integer> CourseID=new ArrayList<>();
+	List<Integer> courseIDs=new ArrayList<>();
 	
 	public Student(String name,int studentID, String studentStatus){
 		this.studentNumber=studentID;
@@ -28,7 +28,7 @@ public class Student {
 		return studentNumber;
 }
 
-	private void setMaxCourseOfStudent(String studentStatus) {
+	public void setMaxCourseOfStudent(String studentStatus) {
 		if(studentStatus == "full time"){
 			maxCourseCount = 4;
 		}
@@ -38,6 +38,15 @@ public class Student {
 			 else
 				 maxCourseCount = 0;
 		
+	}
+	
+	public String registerCourse(Course course){
+		courseIDs.add(course.getCode());
+		return "student registered for course";
+	}
+
+	public List<Course> currentCourses() {
+		return CourseTable.getInstance().getCourses(courseIDs);
 	}
 	
 

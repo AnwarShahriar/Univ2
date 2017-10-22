@@ -38,8 +38,8 @@ public class CourseTest {
 	 								true, // hasAFinal
 	 								2, // numberOfAssignments,
 	 								1, // numberOfMidterms,
-	 								true // enforcePrereqs)
-	 								);
+	 								true, // enforcePrereqs)
+	 								true);
 	 		} catch (Exception e) {
 	 			e.printStackTrace();
 	 		}
@@ -56,8 +56,8 @@ public class CourseTest {
 	 								true, // hasAFinal
 	 								2, // numberOfAssignments,
 	 								1, // numberOfMidterms,
-	 								true // enforcePrereqs)
-	 								);
+	 								true, // enforcePrereqs)
+	 								true);
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
@@ -70,8 +70,8 @@ public class CourseTest {
  								false, // hasAFinal
  								0, // numberOfAssignments,
  								0, // numberOfMidterms,
- 								true // enforcePrereqs)
- 								);
+ 								true, // enforcePrereqs)
+ 								true);
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
@@ -84,8 +84,8 @@ public class CourseTest {
 								false, // hasAFinal
 								6, // numberOfAssignments,
 								0, // numberOfMidterms,
-								true // enforcePrereqs)
-								);
+								true, // enforcePrereqs)
+								true);
 
 	}
 	
@@ -99,8 +99,8 @@ public class CourseTest {
 							false, // hasAFinal
 							2, // numberOfAssignments,
 							3, // numberOfMidterms,
-							true // enforcePrereqs)
-							);
+							true, // enforcePrereqs)
+							true);
 
 }
 }

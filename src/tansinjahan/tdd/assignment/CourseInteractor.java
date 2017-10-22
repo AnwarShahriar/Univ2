@@ -19,7 +19,8 @@ public class CourseInteractor {
 			 			boolean hasAFinal, 
 			 			int numberOfAssignments, 
 			 			int numberOfMidTerms, 
-			 			boolean enforcePrereqs
+			 			boolean enforcePrereqs,
+			 			boolean isProjectCourse
 			 		) {
 		validateCode(code);
 		validateGradeElems(hasAFinal, numberOfAssignments, numberOfMidTerms);
@@ -29,7 +30,7 @@ public class CourseInteractor {
 		 			throw new IllegalArgumentException("Course already exist");
 		 		
 		logger.info(String.format("Course is created with title %s and capsize %d", title, capsize));
-		Course course = versity.createCourse(title, capsize);
+		Course course = versity.createCourse(title, capsize,isProjectCourse);
 		course.setCode(code);
 		course.setHasAFinal(hasAFinal);
 		course.setAssignments(numberOfAssignments);

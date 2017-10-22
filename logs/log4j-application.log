@@ -196,4 +196,16 @@
 
 @2017-10-18 17:46:46 INFO  LibServer:80 - Client: 62081 Exits
 @2017-10-18 17:46:46 INFO  LibServer:84 - Client : 62081Exits
+@2017-10-22 11:21:44 INFO  CourseInteractor:52 - Course is created with valid code
+@2017-10-22 11:21:44 INFO  CourseInteractor:61 - Course is created with valid grade elements
+@2017-10-22 11:21:44 INFO  CourseInteractor:46 - Course is created with valid class size
+@2017-10-22 11:21:44 INFO  CourseInteractor:32 - Course is created with title CS101 and capsize 27
+@2017-10-22 11:29:54 INFO  CourseInteractor:52 - Course is created with valid code
+@2017-10-22 11:29:54 INFO  CourseInteractor:61 - Course is created with valid grade elements
+@2017-10-22 11:29:54 INFO  CourseInteractor:46 - Course is created with valid class size
+@2017-10-22 11:29:54 INFO  CourseInteractor:32 - Course is created with title CS101 and capsize 27
+@2017-10-22 11:39:13 INFO  CourseInteractor:52 - Course is created with valid code
+@2017-10-22 11:39:13 INFO  CourseInteractor:61 - Course is created with valid grade elements
+@2017-10-22 11:39:13 INFO  CourseInteractor:46 - Course is created with valid class size
+@2017-10-22 11:39:13 INFO  CourseInteractor:32 - Course is created with title CS101 and capsize 27
 @

@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 
 import tansinjahan.tdd.assignment.StudentTable;
 import tansinjahan.tdd.assignment.Course;
+import tansinjahan.tdd.assignment.ProjectCourse;
 import utilities.Trace;
 
 public class University {
@@ -14,8 +15,10 @@ public class University {
 	Logger logger = Trace.getInstance().getLogger(this);
 	private static final University INSTANCE = new University();
 	
-	public Course createCourse(String title, int capsize) {
-		 		return new Course(title, capsize);
+	public Course createCourse(String title, int capsize,boolean hasProject) {
+		Course course = hasProject? new ProjectCourse(title, capsize): new Course(title, capsize);
+		CourseTable.getInstance().add(course);
+		return course;
 		 	}
 	
 	public String getName() {
