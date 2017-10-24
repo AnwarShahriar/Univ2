@@ -103,7 +103,7 @@ public class StudentTest {
 	public void studentRegistersCourse() {
 			Student student = versity.createStudent("John Doe", 123,"part time");
 			CourseInteractor interactor = new CourseInteractor(versity);
-			Course course = interactor.createCourse("cleark", "CS101", 101000, 27, true, 2, 1, false,true);
+			Course course = interactor.createCourse("clerk", "CS101", 101000, 27, true, 2, 1, false,true);
 			student.registerCourse(course);
 			
 			List<Course> courses = student.currentCourses();

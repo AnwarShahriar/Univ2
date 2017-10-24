@@ -21,7 +21,7 @@ public class University {
 			Course course = hasProject? new ProjectCourse(title, capsize): new Course(title, capsize);
 			CourseTable.getInstance().add(course);
 			return course;
-			 	}
+		}
 		
 		public String getName() {
 			return "Carleton";

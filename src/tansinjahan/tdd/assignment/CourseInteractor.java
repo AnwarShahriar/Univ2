@@ -24,6 +24,7 @@ public class CourseInteractor {
 			 		) {
 		validateCode(code);
 		validateGradeElems(hasAFinal, numberOfAssignments, numberOfMidTerms);
+		validateGradeElems(hasAFinal, numberOfAssignments, numberOfMidTerms, isProjectCourse);
 		validateCapsize(capsize);
 		 		
 		if (versity.hasCourseExists(code)) 
@@ -33,8 +34,8 @@ public class CourseInteractor {
 		Course course = versity.createCourse(title, capsize,isProjectCourse);
 		course.setCode(code);
 		course.setHasAFinal(hasAFinal);
-		course.setAssignments(numberOfAssignments);
-		course.setMidterm(numberOfMidTerms);
+		course.setNumberOfAssignments(numberOfAssignments);
+		course.setNumberOfMidterm(numberOfMidTerms);
 		course.setPrerequisites(enforcePrereqs);
 		
 		return course;
@@ -59,6 +60,11 @@ public class CourseInteractor {
 		 			throw new IllegalArgumentException("Number of assignments or midterm exceeds");
 		 	
 		 		logger.info(String.format("Course is created with valid grade elements"));
+		 	}
+	
+	private void validateGradeElems(boolean hasAFinal, int numberOfAssignments, int numberOfMidTerms, boolean isProjectCourse) {
+				if (!hasAFinal && numberOfAssignments == 0 && numberOfMidTerms == 0 && !isProjectCourse)
+		 			throw new IllegalArgumentException("There must be one grade element");
 		 	}
 
 }
