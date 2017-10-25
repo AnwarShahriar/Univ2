@@ -256,4 +256,39 @@ public class CourseTest {
 	 		}
 	 		assertEquals(true, course.isFull());
 	 	}
+	
+	@Test
+	 	public void removeStudentSucceedForRegisteredStudent() {
+	 		Course course = interactor.createCourse(
+	 									"clerk", // user
+	 									"CS", // title,
+	 									110022, // code
+	 									26, // capsize
+	 									true, // hasAFinal
+	 									2, // numberOfAssignments,
+	 									2, // numberOfMidterms,
+	 									true, // enforcePrereqs)
+	 									false // isProjectCourse
+	 									);
+	 		course.addStudent(new Student("John", 123,"Part Time"));
+	 		boolean success = course.removeStudent(new Student("John", 123,"Part Time"));
+	 		assertEquals(true, success);
+	 	}
+	
+	@Test
+	 	public void removeStudentFailsForNotRegisteredStudent() {
+	 		Course course = interactor.createCourse(
+	 									"clerk", // user
+	 									"CS", // title,
+	 									110022, // code
+	 									26, // capsize
+	 									true, // hasAFinal
+	 									2, // numberOfAssignments,
+	 									2, // numberOfMidterms,
+	 									true, // enforcePrereqs)
+	 									false // isProjectCourse
+	 									);
+	 		boolean failure = course.removeStudent(new Student("John", 123,"full time"));
+	 		assertEquals(false, failure);
+	 	}
 }

@@ -121,6 +121,10 @@ public class Course {
 		 		if (students.contains(student) || isFull()) return false;
 		 		return students.add(student);
 		 	}
+	
+	public boolean removeStudent(Student student) {
+		 		return students.remove(student);
+		 	}
 		 	
 
 }
