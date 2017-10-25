@@ -291,4 +291,36 @@ public class CourseTest {
 	 		boolean failure = course.removeStudent(new Student("John", 123,"full time"));
 	 		assertEquals(false, failure);
 	 	}
+	
+	@Test
+	 	public void courseHasproject() {
+	 		Course course = interactor.createCourse(
+	 									"clerk", // user
+	 									"CS", // title,
+	 									110022, // code
+	 									26, // capsize
+	 									true, // hasAFinal
+	 									2, // numberOfAssignments,
+	 									2, // numberOfMidterms,
+	 									true, // enforcePrereqs)
+	 									true // isProjectCourse
+	 									);
+	 		assertEquals(true, course.hasProject());
+	 	}
+	
+	@Test
+	 	public void courseHasNoProject() {
+	 		Course course = interactor.createCourse(
+	 									"clerk", // user
+	 									"CS", // title,
+	 									110022, // code
+	 									26, // capsize
+	 									true, // hasAFinal
+	 									2, // numberOfAssignments,
+	 									2, // numberOfMidterms,
+	 									true, // enforcePrereqs)
+	 									false // isProjectCourse
+	 									);
+	 		assertEquals(false, course.hasProject());
+	 	}
 }
