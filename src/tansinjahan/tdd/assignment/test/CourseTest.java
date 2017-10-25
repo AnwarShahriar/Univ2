@@ -323,4 +323,24 @@ public class CourseTest {
 	 									);
 	 		assertEquals(false, course.hasProject());
 	 	}
+	
+	@Test
+	 	public void courseHasStudents() {
+	 		Course course = interactor.createCourse(
+	 									"clerk", // user
+	 									"CS", // title,
+	 									110022, // code
+	 									26, // capsize
+	 									true, // hasAFinal
+	 									2, // numberOfAssignments,
+	 									2, // numberOfMidterms,
+	 									true, // enforcePrereqs)
+	 									false // isProjectCourse
+	 									);
+	 		course.addStudent(new Student("One", 1,"Full Time"));
+	 		course.addStudent(new Student("Two", 2,"Part time"));
+	 		course.addStudent(new Student("Three", 3,"Full Time"));
+	 		
+	 		assertEquals(3, course.students().size());
+	 	}
 }

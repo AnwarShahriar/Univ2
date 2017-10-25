@@ -21,6 +21,7 @@ public class Course {
 	protected int finalWeight;
 	
 	List<Student> students = new ArrayList<>();
+	List<Integer> preRequisites = new ArrayList<>();
 	
 	public Course(String title, int capsize) {
 		 		this.title = title;
@@ -90,7 +91,7 @@ public class Course {
 				if (hasAFinal) {
 					finalWeight = remainWeightToAssign;
 				}
-			}
+	}
 	
 	protected int assignWeight(int[] weightArr, int elemCount, int remainGradeElemCount, int totalWeight) {
 				double totalGradeElems = remainGradeElemCount;
@@ -111,20 +112,32 @@ public class Course {
 				totalWeight -= totalAllotedAssignmentWeight;
 				
 				return totalWeight;
-			}
+	}
 	
 	public boolean isFull() {
 		 		return students.size() == capsize;
-		 	}
+	}
 	
 	public boolean addStudent(Student student) {
 		 		if (students.contains(student) || isFull()) return false;
 		 		return students.add(student);
-		 	}
+	}
 	
 	public boolean removeStudent(Student student) {
 		 		return students.remove(student);
-		 	}
+	}
+	
+	public List<Student> students() {
+		 		return students;
+	}
+		 	
+	public List<Integer> preRequisites() {
+		 		return preRequisites;
+	}
+	
+	public boolean addPreRequisite(int courseCode) {
+		 		return preRequisites.add(courseCode);
+	}
 		 	
 
 }
