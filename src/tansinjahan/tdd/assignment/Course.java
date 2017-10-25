@@ -20,6 +20,8 @@ public class Course {
 	protected int[] midTermWeights;
 	protected int finalWeight;
 	
+	List<Student> students = new ArrayList<>();
+	
 	public Course(String title, int capsize) {
 		 		this.title = title;
 		 		this.capsize = capsize;
@@ -110,5 +112,15 @@ public class Course {
 				
 				return totalWeight;
 			}
+	
+	public boolean isFull() {
+		 		return students.size() == capsize;
+		 	}
+	
+	public boolean addStudent(Student student) {
+		 		if (students.contains(student) || isFull()) return false;
+		 		return students.add(student);
+		 	}
+		 	
 
 }

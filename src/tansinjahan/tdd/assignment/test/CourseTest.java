@@ -178,4 +178,82 @@ public class CourseTest {
 			
 			assertEquals(100, totalWeight);
 		}
+	
+	@Test
+	 	public void addStudentSucceed() {
+	 		Course course = interactor.createCourse(
+	 									"clerk", // user
+	 									"CS", // title,
+	 									110022, // code
+	 									26, // capsize
+	 									true, // hasAFinal
+	 									2, // numberOfAssignments,
+	 									2, // numberOfMidterms,
+	 									true, // enforcePrereqs)
+	 									false // isProjectCourse
+	 									);
+	 		boolean success = course.addStudent(new Student("John", 123,"Part Time"));
+	 		assertEquals(true, success);
+	 	}
+	
+	@Test
+	 	public void duplicateAddStudentFails() {
+	 		Course course = interactor.createCourse(
+	 									"clerk", // user
+	 									"CS", // title,
+	 									110022, // code
+	 									26, // capsize
+	 									true, // hasAFinal
+	 									2, // numberOfAssignments,
+	 									2, // numberOfMidterms,
+	 									true, // enforcePrereqs)
+	 									false // isProjectCourse
+	 									);
+	 		course.addStudent(new Student("John", 123,"Part Time"));
+	 		boolean failure = course.addStudent(new Student("John", 123,"Part Time"));
+	 		assertEquals(false, failure);
+	 	}
+	
+	@Test
+	 	public void addStudentFailsWhenExceedsCapSize() {
+	 		Course course = interactor.createCourse(
+	 									"clerk", // user
+	 									"CS", // title,
+	 									110022, // code
+	 									26, // capsize
+	 									true, // hasAFinal
+	 									2, // numberOfAssignments,
+	 									2, // numberOfMidterms,
+	 									true, // enforcePrereqs)
+	 									false // isProjectCourse
+	 									);
+	 		for(int i = 0; i < 26; i++) {
+	 			String name = "Student " + i;
+	 			course.addStudent(new Student(name, i,"Full Time"));
+	 		}
+	 		
+	 		String name = "Student 26";
+	 		boolean failure = course.addStudent(new Student(name, 26,"Part Time"));
+	 		assertEquals(false, failure);
+	 	}
+	
+	@Test
+	 	public void courseIsFullWhenStudentReachesCapSize() {
+	 		Course course = interactor.createCourse(
+	 									"clerk", // user
+	 									"CS", // title,
+	 									110022, // code
+	 									26, // capsize
+	 									true, // hasAFinal
+	 									2, // numberOfAssignments,
+	 									2, // numberOfMidterms,
+	 									true, // enforcePrereqs)
+	 									false // isProjectCourse
+	 									);
+	 		for(int i = 0; i < 26; i++) {
+	 			String name = "Student " + i;
+	 			course.addStudent(new Student(name, i,"Full time"));
+	 		}
+	 		assertEquals(true, course.isFull());
+	 	}
 }
