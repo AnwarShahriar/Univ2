@@ -343,4 +343,59 @@ public class CourseTest {
 	 		
 	 		assertEquals(3, course.students().size());
 	 	}
+	
+	@Test
+	 	public void courseMarksRequestedForRegisteredStudent() {
+	 		Course course = interactor.createCourse(
+	 									"clerk", // user
+	 									"CS", // title,
+	 									110022, // code
+	 									26, // capsize
+	 									true, // hasAFinal
+	 									2, // numberOfAssignments,
+	 									2, // numberOfMidterms,
+	 									true, // enforcePrereqs)
+	 									false // isProjectCourse
+	 									);
+	 		course.addStudent(new Student("One", 1,"Full time"));
+	 		boolean markIsGreaterThanZero = course.markForStudent(new Student("One", 1,"Full time")) > 0;
+	 		assertEquals(true, markIsGreaterThanZero);
+	 	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	 	public void courseMarksRequestForNotRegisteredStudentThrowsException() {
+	 		Course course = interactor.createCourse(
+	 									"clerk", // user
+	 									"CS", // title,
+	 									110022, // code
+	 									26, // capsize
+	 									true, // hasAFinal
+	 									2, // numberOfAssignments,
+	 									2, // numberOfMidterms,
+	 									true, // enforcePrereqs)
+	 									false // isProjectCourse
+	 									);
+	 		course.markForStudent(new Student("One", 1,"Part Time"));
+	 	}
+	
+	@Test
+	 	public void alreadyRecordedStudentMarkIsSameAsBefore() {
+	 		Course course = interactor.createCourse(
+	 									"clerk", // user
+	 									"CS", // title,
+	 									110022, // code
+	 									26, // capsize
+	 									true, // hasAFinal
+	 									2, // numberOfAssignments,
+	 									2, // numberOfMidterms,
+	 									true, // enforcePrereqs)
+	 									false // isProjectCourse
+	 									);
+	 		course.addStudent(new Student("One", 1,"Full time"));
+	 		
+	 		int markForStudent = course.markForStudent(new Student("One", 1,"Full time"));
+	 		int againMarkForStudent = course.markForStudent(new Student("One", 1,"Full Time"));
+	 		
+	 		assertEquals(true, markForStudent == againMarkForStudent);
+	 	}
 }
