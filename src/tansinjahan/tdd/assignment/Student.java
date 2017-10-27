@@ -8,11 +8,11 @@ import server.logic.tables.StudentTable;
 public class Student {
 	private int studentNumber;
 	private String studentName;
-	private String status;
 	private boolean fullTime;
 	private int maxCourseCount;
 	
 	List<Integer> courseIDs=new ArrayList<>();
+	private List<Course> registeredCourses = new ArrayList<>();
 	
 	public Student(String name,int studentID, String studentStatus){
 		this.studentNumber=studentID;
@@ -39,15 +39,15 @@ public class Student {
 	}
 	
 	public void registerCourse(Course course){
-		if (alreadyRegistered(course.getCode())) {
+		if (alreadyRegistered(course)) {
 						throw new IllegalStateException("Already registered for course");
 					}
 					
-					if (courseIDs.size() == maxCourseCount) {
+		if (registeredCourses.size() == maxCourseCount) {
 						throw new IllegalStateException(String.format("Max course count for %s student is %d", (fullTime ? "full time" : "part time"), maxCourseCount));
 					}
 		
-		courseIDs.add(course.getCode());
+		registeredCourses.add(course);
 	}
 
 	@Override
@@ -72,17 +72,12 @@ public class Student {
 		return true;
 	}
 
-	private boolean alreadyRegistered(int code) {
-		for (int id : courseIDs) {
-						if (id == code) {
-							return true;
-						}
-					}
-					return false;
+	private boolean alreadyRegistered(Course course) {
+		return registeredCourses.contains(course);
 	}
 
 	public List<Course> currentCourses() {
-		return CourseTable.getInstance().getCourses(courseIDs);
+		return registeredCourses;
 	}
 	
 
