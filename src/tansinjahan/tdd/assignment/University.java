@@ -9,13 +9,15 @@ import tansinjahan.tdd.assignment.StudentTable;
 import tansinjahan.tdd.assignment.Course;
 import tansinjahan.tdd.assignment.ProjectCourse;
 import utilities.Trace;
+import tansinjahan.tdd.assignment.TermEventListener;;
 
-public class University {
+public class University implements TermEventListener{
 		
 		private List<Course> courses=new ArrayList<>();
 		private static final University INSTANCE = new University();
 		Logger logger = Trace.getInstance().getLogger(this);
 		
+		private TermState termState = TermState.NONE;
 		
 		public Course createCourse(String title, int capsize,boolean hasProject) {
 			Course course = hasProject? new ProjectCourse(title, capsize): new Course(title, capsize);
@@ -23,6 +25,38 @@ public class University {
 			return course;
 		}
 		
+		public enum TermState {
+			 		NONE,
+			 		CREATE_STUDENT_COURSE_STATE,
+			 		COURSE_REGISTRATION_STATE,
+			 		TERM_PROPERLY_STARTED_STATE,
+			 		TERM_END_STATE
+			 	}
+		
+		public TermState getTermState() {
+			 		return termState;
+			 	}
+			 
+		@Override
+		public void onCreate() {
+			 	termState = TermState.CREATE_STUDENT_COURSE_STATE;
+			 	}
+			 
+		@Override
+		public void onRegistrationPossible() {
+			 	termState = TermState.COURSE_REGISTRATION_STATE;
+			 	}
+			 
+		@Override
+		public void onTermProperlyStarted() {
+				termState = TermState.TERM_PROPERLY_STARTED_STATE;
+			 	}
+			 
+		@Override
+		public void onTermEnded() {
+			 	termState = TermState.TERM_END_STATE;
+			 	}
+			 
 		public String getName() {
 			return "Carleton";
 		}
