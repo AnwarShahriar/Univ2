@@ -118,4 +118,11 @@ public class StudentTest {
 				assertEquals(true, exist);
 		}
 	
+	@Test
+	 	public void studentWithSameStudentNumberHasSameHashCode() {
+	 		Student student1 = new Student("John", 23,"Full time");
+	 		Student student2 = new Student("John", 23,"Full time");
+	 		assertEquals(student1.hashCode(), student2.hashCode());
+	 	}
+	
 }
