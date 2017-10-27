@@ -13,6 +13,7 @@ public class Student {
 	
 	List<Integer> courseIDs=new ArrayList<>();
 	private List<Course> registeredCourses = new ArrayList<>();
+	private List<Course> completedCourses = new ArrayList<>();
 	
 	public Student(String name,int studentID, String studentStatus){
 		this.studentNumber=studentID;
@@ -80,5 +81,16 @@ public class Student {
 		return registeredCourses;
 	}
 	
+	public void completedCourse(Course course) {
+		if (!registeredCourses.contains(course)) { 
+			 	String errMsg = String.format("Course %s is not registered by Student %d", course.title, studentNumber);
+			 	throw new IllegalArgumentException(errMsg);
+			 	}
+			 	completedCourses.add(course);
+	}
+			 
+	public List<Course> completedCourses() {
+			 	return completedCourses;
+	}
 
 }
