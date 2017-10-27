@@ -19,27 +19,28 @@ import tansinjahan.tdd.assignment.University;
 public class StudentTest {
 	private static University versity;
 	
-	@BeforeClass
-	public static void setup() {
+		@BeforeClass
+		public static void setup() {
 		versity = University.getInstance();
 	}
 	
-	@Before
-	public void prepare() {
+		@Before
+		public void prepare() {
 			StudentTable.getInstance().clear();
 			CourseTable.getInstance().clear();
 					
 			prepareDummyCourse();
 		}
 	
-	@Test
+		@Test
 		public void studentRegistersForACourseDoesNotThrowException() {
 			Student student = new Student("John", 23,"Full time");
 			Course course = CourseTable.getInstance().findCourseByCode(111110);
+			student.selectCourse(course);
 			versity.registerStudentForCourse(student, course);
 		}
 	
-	private void prepareDummyCourse() {
+		private void prepareDummyCourse() {
 		CourseInteractor courseInteractor = new CourseInteractor(versity);
 		courseInteractor.createCourse("cleark", "CS101", 111110, 26, true, 2, 1, false,true);
 		courseInteractor.createCourse("cleark", "CS102", 111111, 26, true, 2, 1, false,false);
@@ -49,16 +50,17 @@ public class StudentTest {
 		
 	}
 	
-	@Test(expected = IllegalStateException.class)
-	public void duplicateCourseRegistrationThrowsException() {
+		@Test(expected = IllegalStateException.class)
+		public void duplicateCourseRegistrationThrowsException() {
 			Student student = new Student("John", 23,"full time");
 			Course course = CourseTable.getInstance().findCourseByCode(111110);
 			
+			student.selectCourse(course);
 			versity.registerStudentForCourse(student, course);
 			versity.registerStudentForCourse(student, course);
 		}
 	
-	@Test(expected = IllegalStateException.class)
+		@Test(expected = IllegalStateException.class)
 		public void courseRegistrationAttemptMoreThan4ThrowsExceptionForFullTimeStudent() {
 			Student student = new Student("John", 23,"Full time");
 			Course course1 = CourseTable.getInstance().findCourseByCode(111110);
@@ -74,7 +76,7 @@ public class StudentTest {
 			versity.registerStudentForCourse(student, course5);
 		}
 	
-	@Test(expected = IllegalStateException.class)
+		@Test(expected = IllegalStateException.class)
 		public void courseRegistrationAttemptMoreThan2ThrowsExceptionForPartTimeStudent() {
 			Student student = new Student("John", 23,"Part time");
 			
@@ -87,49 +89,46 @@ public class StudentTest {
 			versity.registerStudentForCourse(student, course3);
 		}
 
-	@Test
-	public void createStudentIDTest(){
+		@Test
+		public void createStudentIDTest(){
 		Student student = versity.createStudent("Tansin", 1104, "full time");
 		assertEquals(1104,student.getStudentNumber());
 	}
 	
-	@Test
-	public void createStudentNameTest(){
+		@Test
+		public void createStudentNameTest(){
 		Student student = versity.createStudent("Tansin", 1104, "full time");
 		assertEquals("Tansin",student.getName());
 	}
 	
-	@Test
-	public void studentRegistersCourse() {
+		@Test
+		public void studentRegistersCourse() {
 			Student student = versity.createStudent("John Doe", 123,"part time");
 			CourseInteractor interactor = new CourseInteractor(versity);
 			Course course = interactor.createCourse("clerk", "CS101", 101000, 27, true, 2, 1, false,true);
+			student.selectCourse(course);
 			student.registerCourse(course);
 			
 			List<Course> courses = student.currentCourses();
-					
-			boolean exist = false;
-				for (Course c : courses) {
-						if (c.getCode() == course.getCode()) {
-							exist = true;
-							break;
-						}
-					}
-				assertEquals(true, exist);
+			
+			assertEquals(course.getCode(), courses.get(0).getCode());
 		}
 	
-	@Test
+		@Test
 	 	public void studentWithSameStudentNumberHasSameHashCode() {
 	 		Student student1 = new Student("John", 23,"Full time");
 	 		Student student2 = new Student("John", 23,"Full time");
 	 		assertEquals(student1.hashCode(), student2.hashCode());
 	 	}
 	
-	@Test
+		@Test
 	 	public void studentHasCompletedCourses() {
 	 		Student student = new Student("John", 23,"Part Time");
 	 		Course c1 = CourseTable.getInstance().findCourseByCode(111110);
 	 		Course c2 = CourseTable.getInstance().findCourseByCode(111111);
+	 		
+	 		student.selectCourse(c1);
+	 		student.selectCourse(c2);
 	 		
 	 		student.registerCourse(c1);
 	 		student.registerCourse(c2);
@@ -140,14 +139,81 @@ public class StudentTest {
 	 		assertEquals(2, student.completedCourses().size());
 	 	}
 	
-	@Test(expected = IllegalArgumentException.class)
+		@Test(expected = IllegalArgumentException.class)
 	 	public void attemptsToCompleteCourseNotInRegisteredCourseListThrowsException() {
 	 		Student student = new Student("John", 23,"Part time");
 	 		Course c1 = CourseTable.getInstance().findCourseByCode(111110);
 	 		Course c2 = CourseTable.getInstance().findCourseByCode(111111);
 	 		
+	 		student.selectCourse(c1);
+	 		student.selectCourse(c2);
+	 		
 	 		student.registerCourse(c1);
 	 		student.completedCourse(c2);
 	 	}
+	
+		@Test
+	 	public void selectCourseSucceed() {
+	 		Student student = new Student("John", 23,"Part time");
+	 		Course c1 = CourseTable.getInstance().findCourseByCode(111110);
+	 		Course c2 = CourseTable.getInstance().findCourseByCode(111111);
+	 		
+	 		student.selectCourse(c1);
+	 		student.selectCourse(c2);
+	 		
+	 		assertEquals(2, student.selectedCourses().size());
+	 	}
+	 	
+	 	@Test(expected = IllegalArgumentException.class)
+	 	public void attemptsToSelectAlreadyRegisteredCourseThrowsException() {
+	 		Student student = new Student("John", 23,"Full time");
+	 		Course c = CourseTable.getInstance().findCourseByCode(111110);
+	 		student.selectCourse(c);
+	 		student.registerCourse(c);
+	 		student.selectCourse(c);
+	 	}
+	 	
+	 	@Test(expected = IllegalArgumentException.class)
+	 	public void attemptsToSelectAlreadyCompletedCourseThrowsException() {
+	 		Student student = new Student("John", 23,"Full Time");
+	 		Course c = CourseTable.getInstance().findCourseByCode(111110);
+	 		student.selectCourse(c);
+	 		student.registerCourse(c);
+	 		student.completedCourse(c);
+	 		student.selectCourse(c);
+	 	}
+	 	
+	 	@Test(expected = IllegalStateException.class)
+	 	public void attemptsToRegisterCourseNotInSelectedCoursesThrowsException() {
+	 		Student student = new Student("John", 23,"Part Time");
+	 		Course c = CourseTable.getInstance().findCourseByCode(111110);
+	 		student.registerCourse(c);
+	 	}
+	 	
+	 	@Test
+	 	public void studentDropsCourse() {
+	 	 		Student student = new Student("John", 23,"Full time");
+	 	 		Course c = CourseTable.getInstance().findCourseByCode(111110);
+	 	 		student.selectCourse(c);
+	 	 		student.registerCourse(c);
+	 	 		assertEquals(true, student.dropCourse(c));
+	 	 	}
+	 	 	
+	 	 @Test
+	 	 public void studentCannotDropUnregisteredCourses() {
+	 	 		Student student = new Student("John", 23,"Full time");
+	 	 		Course c = CourseTable.getInstance().findCourseByCode(111110);
+	 	 		student.selectCourse(c);
+	 	 		assertEquals(false, student.dropCourse(c));
+	 	 	}
+	 	 	
+	 	 @Test
+	 	 public void studentDeregisterCourse() {
+	 	 		Student student = new Student("John", 23,"Part Time");
+	 	 		Course c = CourseTable.getInstance().findCourseByCode(111110);
+	 	 		student.selectCourse(c);
+	 	 		student.registerCourse(c);
+	 	 		assertEquals(true, student.deRegisterCourse(c));
+	 	 	}
 	
 }

@@ -1,7 +1,9 @@
 package tansinjahan.tdd.assignment;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import server.logic.tables.StudentTable;
 
@@ -14,6 +16,8 @@ public class Student {
 	List<Integer> courseIDs=new ArrayList<>();
 	private List<Course> registeredCourses = new ArrayList<>();
 	private List<Course> completedCourses = new ArrayList<>();
+	private List<Course> selectedCourses = new ArrayList<>();
+	private Map<Course, String> dropedCourseMap = new HashMap<>();
 	
 	public Student(String name,int studentID, String studentStatus){
 		this.studentNumber=studentID;
@@ -40,6 +44,10 @@ public class Student {
 	}
 	
 	public void registerCourse(Course course){
+		if (!selectedCourses.contains(course)) {
+			 		String errMsg = String.format("Course %s is not on selected course list", course.title);
+			 			throw new IllegalStateException(errMsg);
+			 		}
 		if (alreadyRegistered(course)) {
 						throw new IllegalStateException("Already registered for course");
 					}
@@ -47,7 +55,7 @@ public class Student {
 		if (registeredCourses.size() == maxCourseCount) {
 						throw new IllegalStateException(String.format("Max course count for %s student is %d", (fullTime ? "full time" : "part time"), maxCourseCount));
 					}
-		
+		selectedCourses.remove(course);
 		registeredCourses.add(course);
 	}
 
@@ -92,5 +100,35 @@ public class Student {
 	public List<Course> completedCourses() {
 			 	return completedCourses;
 	}
-
+	
+	public void selectCourse(Course course) {
+		 if (registeredCourses.contains(course)) {
+		 		String errMsg = String.format("Course %s is already registered and cannot be selected", course.title);
+		 		throw new IllegalArgumentException(errMsg);
+		 	}
+		 		
+		 if (completedCourses.contains(course)) {
+		 		String errMsg = String.format("Course %s is already completed and cannot be selected", course.title);
+		 		throw new IllegalArgumentException(errMsg);
+		 	}
+		 		
+		 		selectedCourses.add(course);
+		 	}
+		 
+	public List<Course> selectedCourses() {
+		 		return selectedCourses;
+		 	}
+	
+	public boolean dropCourse(Course course) {
+		 if (registeredCourses.contains(course)) {
+		 		registeredCourses.remove(course);
+		 		dropedCourseMap.put(course, "DR");
+		 		return true;
+		 	}
+		 		return false;
+		 }
+		 
+	public boolean deRegisterCourse(Course course) {
+		 		return registeredCourses.remove(course);
+		 	}
 }
