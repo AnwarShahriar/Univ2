@@ -202,5 +202,16 @@ public class University implements TermEventListener{
 						throw new IllegalStateException(errMsg);
 					}
 		}
-
+		
+		public void deleteStudent(Student student) {
+					StudentTable.getInstance().students.remove(student);
+					
+					List<Course> courses = new ArrayList<>();
+					courses.addAll(student.currentCourses());
+					courses.addAll(student.selectedCourses());
+					
+					for (Course c : courses) {
+						c.students().remove(student);
+					}
+		}
 }
