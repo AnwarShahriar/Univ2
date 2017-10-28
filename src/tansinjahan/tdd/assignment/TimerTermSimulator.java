@@ -11,6 +11,7 @@ public class TimerTermSimulator extends TermSimulator {
 	private static final int CREATE_COURSE_STUDENT_DAY_LIMIT = 20;
 	private static final int REGISTRATION_DAY_LIMIT = 14;
 	private static final int TERM_DAY_LIMIT = 84;
+	private static final int DEREGISTRATION_WINDOW_LIMIT = 14;
 	
 	int stimulatedDay;
 	Timer timer;
@@ -34,7 +35,9 @@ public class TimerTermSimulator extends TermSimulator {
 		timer.schedule(new AfterRegistrationTermStartedTask(), 
 				stimulatedDay * (CREATE_COURSE_STUDENT_DAY_LIMIT + REGISTRATION_DAY_LIMIT));
 		timer.schedule(new TermEndsTask(), 
-				stimulatedDay * (CREATE_COURSE_STUDENT_DAY_LIMIT + REGISTRATION_DAY_LIMIT + TERM_DAY_LIMIT));
+				stimulatedDay * (CREATE_COURSE_STUDENT_DAY_LIMIT + REGISTRATION_DAY_LIMIT  + TERM_DAY_LIMIT));
+		timer.schedule(new TwoWeeksPassedAfterTermStarted(), 
+								stimulatedDay * (CREATE_COURSE_STUDENT_DAY_LIMIT + REGISTRATION_DAY_LIMIT  + DEREGISTRATION_WINDOW_LIMIT));
 	}
 	
 	private class RegistrationPossibleTask extends TimerTask {
@@ -58,5 +61,12 @@ public class TimerTermSimulator extends TermSimulator {
 			listener.onTermEnded();
 		}
 	}
+	
+	private class TwoWeeksPassedAfterTermStarted extends TimerTask {
+		@Override
+		public void run() {
+			listener.onTwoWeekPassedTillTermStarted();
+				}
+			}
 
 }

@@ -56,12 +56,18 @@ public class University implements TermEventListener{
 			 		CREATE_STUDENT_COURSE_STATE,
 			 		COURSE_REGISTRATION_STATE,
 			 		TERM_PROPERLY_STARTED_STATE,
+			 		TWO_WEEK_PASSED_AFTER_TERM_STARTED_STATE,
 			 		TERM_END_STATE
 			 	}
 		
 		public TermState getTermState() {
 			 		return termState;
 			 	}
+		
+		@Override
+			public void onTwoWeekPassedTillTermStarted() {
+				termState = TermState.TWO_WEEK_PASSED_AFTER_TERM_STARTED_STATE;
+			}
 			 
 		@Override
 		public void onCreate() {
@@ -186,6 +192,15 @@ public class University implements TermEventListener{
 		public void destroyCourse(Course course) {
 					cancelCourse(course);
 					CourseTable.getInstance().courses.remove(course);
-				}
+		}
+		
+		public boolean deregisterCourse(Course course, Student student) {
+					if (termState == TermState.TERM_PROPERLY_STARTED_STATE) {
+						return student.deRegisterCourse(course);
+					} else {
+						String errMsg = "Course can be deregistered upto two weeks after term has started properly";
+						throw new IllegalStateException(errMsg);
+					}
+		}
 
 }

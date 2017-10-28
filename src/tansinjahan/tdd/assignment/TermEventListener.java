@@ -5,4 +5,5 @@ public interface TermEventListener {
 	void onRegistrationPossible();
 	void onTermProperlyStarted();
 	void onTermEnded();
+	void onTwoWeekPassedTillTermStarted();
 }

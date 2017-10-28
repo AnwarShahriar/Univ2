@@ -41,10 +41,17 @@ import static org.junit.Assert.*;
  			
  			@Override
  			public void onTermEnded() {
- 				if (order != 6) { 
+ 				if (order != 10) { 
  					fail();
  				}
  				latch.countDown();
+ 			}
+ 			
+ 			public void onTwoWeekPassedTillTermStarted() {
+ 				if (order != 6) {
+ 					fail();
+ 				}
+ 				order += 4;
  			}
 
  			
