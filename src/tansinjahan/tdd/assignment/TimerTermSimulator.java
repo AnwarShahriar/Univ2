@@ -37,7 +37,7 @@ public class TimerTermSimulator extends TermSimulator {
 		timer.schedule(new TermEndsTask(), 
 				stimulatedDay * (CREATE_COURSE_STUDENT_DAY_LIMIT + REGISTRATION_DAY_LIMIT  + TERM_DAY_LIMIT));
 		timer.schedule(new TwoWeeksPassedAfterTermStarted(), 
-								stimulatedDay * (CREATE_COURSE_STUDENT_DAY_LIMIT + REGISTRATION_DAY_LIMIT  + DEREGISTRATION_WINDOW_LIMIT));
+				stimulatedDay * (CREATE_COURSE_STUDENT_DAY_LIMIT + REGISTRATION_DAY_LIMIT  + DEREGISTRATION_WINDOW_LIMIT));
 	}
 	
 	private class RegistrationPossibleTask extends TimerTask {
