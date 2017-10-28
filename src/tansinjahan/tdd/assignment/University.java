@@ -172,6 +172,15 @@ public class University implements TermEventListener{
 		
 		public void selectCourseForStudent(Student student, Course course) {
 					student.selectCourse(course);
+		}
+		
+		public void cancelCourse(Course course) {
+					List<Student> students = course.students();
+					for (Student s : students) {
+						s.currentCourses().remove(course);
+						s.selectedCourses().remove(course);
+					}
+					course.students().clear();
 				}
 
 }
