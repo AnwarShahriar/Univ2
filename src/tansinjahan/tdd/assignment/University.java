@@ -34,6 +34,12 @@ public class University implements TermEventListener{
 							int numberOfMidTerms, 
 							boolean enforcePrereqs, 
 							boolean isProjectCourse) {
+			
+				if (termState != TermState.CREATE_STUDENT_COURSE_STATE) {
+							String errMsg = "Course cannot be created because course creation period is over";
+							throw new IllegalStateException(errMsg);
+						}
+			
 				if (hasCourseExists(code)) {
 							String errMsg = String.format("Course with code %d already exists", code);
 							throw new IllegalArgumentException(errMsg);
@@ -95,6 +101,10 @@ public class University implements TermEventListener{
 		}
 		
 		public Student createStudent(String name, int studentNumber, String status) {
+			if (termState != TermState.CREATE_STUDENT_COURSE_STATE) {
+							String errMsg = "Student cannot be created because student creation period is over";
+							throw new IllegalStateException(errMsg);
+						}
 			if (studentExist(studentNumber)) {
 							String errMsg = String.format("Student with student_number %d already exists", studentNumber);
 							throw new IllegalArgumentException(errMsg);

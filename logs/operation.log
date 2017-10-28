@@ -3409,4 +3409,351 @@
 @2017-10-28 10:17:41 INFO  CourseInteractor:60 - Course is created with valid grade elements
 @2017-10-28 10:17:41 INFO  CourseInteractor:45 - Course is created with valid class size
 @2017-10-28 10:17:41 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS102 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS103 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS104 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  University:129 - Course CS101 is not on selected course list
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS102 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS103 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS104 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  University:129 - Course CS101 is not on selected course list
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS102 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS103 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS104 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS102 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS103 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS104 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 27
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS102 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS103 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS104 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS102 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS103 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS104 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS102 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS103 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS104 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS102 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS103 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS104 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS102 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS103 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS104 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS102 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS103 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS104 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS102 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS103 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS104 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS102 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS103 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS104 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS102 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS103 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS104 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS102 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS103 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS104 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS102 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS103 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS104 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS102 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS103 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS104 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS101 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS102 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS103 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS104 and capsize 26
+@2017-10-28 12:21:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-28 12:21:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-28 12:21:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-28 12:21:30 INFO  CourseInteractor:31 - Course is created with title CS105 and capsize 26
+@2017-10-28 12:21:30 INFO  University:129 - Course CS101 is not on selected course list
 @

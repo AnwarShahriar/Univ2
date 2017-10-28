@@ -15,66 +15,43 @@ import tansinjahan.tdd.assignment.TermEventListener;
 import tansinjahan.tdd.assignment.TermSimulator;
 
 public class UniversityTest {
-	University versity;
-	TestTermSimulator simulator;
-	CourseInteractor interactor;
-	
-	@Before
-	public void setup() {
-		versity = University.getInstance();
-		simulator = new TestTermSimulator(versity);
-		interactor = new CourseInteractor(versity);
-		CourseTable.getInstance().clear();
-		StudentTable.getInstance().clear();
-	}
-	
-	@Test
-	public void termIsCreated() {
-		simulator.termCreated();
-		assertEquals(TermState.CREATE_STUDENT_COURSE_STATE, versity.getTermState());
-	}
-	
-	@Test
-	public void termIsReadyForRegistration() {
-		simulator.termAllowCourseRegistration();
-		assertEquals(TermState.COURSE_REGISTRATION_STATE, versity.getTermState());
-	}
-	
-	@Test
-	public void termStartedProperly() {
-		simulator.startTerm();
-		assertEquals(TermState.TERM_PROPERLY_STARTED_STATE, versity.getTermState());
-	}
-	
-	@Test
-	public void termEnded() {
-		simulator.endTerm();
-		assertEquals(TermState.TERM_END_STATE, versity.getTermState());
-	}
-	
-	public class TestTermSimulator extends TermSimulator {
-
-		public TestTermSimulator(TermEventListener listener) {
-			super(listener);
-		}
-
-		public void endTerm() {
-			listener.onTermEnded();
-		}
-
-		public void startTerm() {
-			listener.onTermProperlyStarted();
-		}
-
-		public void termAllowCourseRegistration() {
-			listener.onRegistrationPossible();
-		}
-
-		public void termCreated() {
-			listener.onCreate();
-		}
+		University versity;
+		TestTermSimulator simulator;
+		CourseInteractor interactor;
 		
-	}
+		@Before
+		public void setup() {
+			versity = University.getInstance();
+			simulator = new TestTermSimulator(versity);
+			interactor = new CourseInteractor(versity);
+			CourseTable.getInstance().clear();
+			StudentTable.getInstance().clear();
+			simulator.termCreated();
+		}
+	
+		@Test
+		public void termIsCreated() {
+			simulator.termCreated();
+			assertEquals(TermState.CREATE_STUDENT_COURSE_STATE, versity.getTermState());
+		}
+	
+		@Test
+		public void termIsReadyForRegistration() {
+			simulator.termAllowCourseRegistration();
+			assertEquals(TermState.COURSE_REGISTRATION_STATE, versity.getTermState());
+		}
+	
+		@Test
+		public void termStartedProperly() {
+			simulator.startTerm();
+			assertEquals(TermState.TERM_PROPERLY_STARTED_STATE, versity.getTermState());
+		}
+	
+		@Test
+		public void termEnded() {
+			simulator.endTerm();
+			assertEquals(TermState.TERM_END_STATE, versity.getTermState());
+		}
 	
 		@Test
 		public void testUniversityCourseCount() {
@@ -162,5 +139,27 @@ public class UniversityTest {
 					versity.createStudent("John", 1,"Part Time");
 					versity.createStudent("Noah", 1,"Full time");
 				}
+		
+		@Test(expected = IllegalStateException.class)
+		public void courseCannotBeCreatedAfterTermCourseCreationWindowIsPassed() {
+				simulator.startTerm();
+				versity.createCourse(
+						"clerk", // user
+						"CS", // title,
+						110022, // code
+						26, // capsize
+						true, // hasAFinal
+						2, // numberOfAssignments,
+						1, // numberOfMidterms,
+						true, // enforcePrereqs)
+						false // isProjectCourse
+						);
+		}
+		
+		@Test(expected = IllegalStateException.class)
+			public void studentCannotBeCreatedAfterTermStudentCreationWindowIsPassed() {
+				simulator.startTerm();
+				versity.createStudent("John", 1,"Part time");
+		 }
 
 }

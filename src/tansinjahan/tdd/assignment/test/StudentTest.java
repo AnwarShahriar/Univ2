@@ -15,9 +15,11 @@ import tansinjahan.tdd.assignment.CourseTable;
 import tansinjahan.tdd.assignment.Student;
 import tansinjahan.tdd.assignment.StudentTable;
 import tansinjahan.tdd.assignment.University;
+import tansinjahan.tdd.assignment.test.TestTermSimulator;
 
 public class StudentTest {
 	private static University versity;
+	private TestTermSimulator simulator;
 	
 		@BeforeClass
 		public static void setup() {
@@ -26,6 +28,9 @@ public class StudentTest {
 	
 		@Before
 		public void prepare() {
+			simulator = new TestTermSimulator(versity);
+			simulator.termCreated();
+			
 			StudentTable.getInstance().clear();
 			CourseTable.getInstance().clear();
 					
