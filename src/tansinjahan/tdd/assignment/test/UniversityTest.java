@@ -6,8 +6,10 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import tansinjahan.tdd.assignment.Course;
 import tansinjahan.tdd.assignment.CourseInteractor;
 import tansinjahan.tdd.assignment.CourseTable;
+import tansinjahan.tdd.assignment.Student;
 import tansinjahan.tdd.assignment.StudentTable;
 import tansinjahan.tdd.assignment.University;
 import tansinjahan.tdd.assignment.University.TermState;
@@ -161,5 +163,61 @@ public class UniversityTest {
 				simulator.startTerm();
 				versity.createStudent("John", 1,"Part time");
 		 }
+		
+		@Test
+			public void selectCourseForStudentSucceeds() {
+				Course course = versity.createCourse("clerk", // user
+						"CS", // title,
+						110022, // code
+						26, // capsize
+						true, // hasAFinal
+						2, // numberOfAssignments,
+						1, // numberOfMidterms,
+						true, // enforcePrereqs)
+						false // isProjectCourse
+				);
+				Student student = versity.createStudent("John", 1,"Full Time");
+				versity.selectCourseForStudent(student, course);
+		
+				assertEquals(course, student.selectedCourses().get(0));
+			}
+		
+		@Test(expected = IllegalStateException.class)
+			public void courseRegistrationFailsUnlessTermStateForRegistrationInProgress() {
+				Course course = versity.createCourse("clerk", // user
+						"CS", // title,
+						110022, // code
+						26, // capsize
+						true, // hasAFinal
+						2, // numberOfAssignments,
+						1, // numberOfMidterms,
+						true, // enforcePrereqs)
+						false // isProjectCourse
+				);
+				Student student = versity.createStudent("John", 1,"Part Time");
+				versity.selectCourseForStudent(student, course);
+				versity.registerStudentForCourse(student, course);
+			}
 
+		
+		@Test
+			public void courseRegistrationSucceedsWhenCourseRegistrationIsAllowedInTerm() {
+				Course course = versity.createCourse("clerk", // user
+						"CS", // title,
+						110022, // code
+						26, // capsize
+						true, // hasAFinal
+						2, // numberOfAssignments,
+						1, // numberOfMidterms,
+						true, // enforcePrereqs)
+						false // isProjectCourse
+				);
+				Student student = versity.createStudent("John", 1,"Full Time");
+				versity.selectCourseForStudent(student, course);
+				
+				simulator.termAllowCourseRegistration();
+				versity.registerStudentForCourse(student, course);
+				
+				assertEquals(student, course.students().get(0));
+			}
 }

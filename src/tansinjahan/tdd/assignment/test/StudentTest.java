@@ -39,6 +39,7 @@ public class StudentTest {
 	
 		@Test
 		public void studentRegistersForACourseDoesNotThrowException() {
+			simulator.termAllowCourseRegistration();
 			Student student = new Student("John", 23,"Full time");
 			Course course = CourseTable.getInstance().findCourseByCode(111110);
 			student.selectCourse(course);
@@ -56,6 +57,7 @@ public class StudentTest {
 	
 		@Test(expected = IllegalStateException.class)
 		public void duplicateCourseRegistrationThrowsException() {
+			simulator.termAllowCourseRegistration();
 			Student student = new Student("John", 23,"full time");
 			Course course = CourseTable.getInstance().findCourseByCode(111110);
 			
