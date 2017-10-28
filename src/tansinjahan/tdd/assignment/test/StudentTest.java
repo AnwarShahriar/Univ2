@@ -41,14 +41,13 @@ public class StudentTest {
 		}
 	
 		private void prepareDummyCourse() {
-		CourseInteractor courseInteractor = new CourseInteractor(versity);
-		courseInteractor.createCourse("cleark", "CS101", 111110, 26, true, 2, 1, false,true);
-		courseInteractor.createCourse("cleark", "CS102", 111111, 26, true, 2, 1, false,false);
-		courseInteractor.createCourse("cleark", "CS103", 111112, 26, true, 2, 1, false,true);
-		courseInteractor.createCourse("cleark", "CS104", 111113, 26, true, 2, 1, false,false);
-		courseInteractor.createCourse("cleark", "CS105", 111114, 26, true, 2, 1, false,true);
-		
-	}
+				CourseInteractor courseInteractor = new CourseInteractor(versity);
+				CourseTable.getInstance().add(courseInteractor.createCourse("cleark", "CS101", 111110, 26, true, 2, 1, false, false));
+				CourseTable.getInstance().add(courseInteractor.createCourse("cleark", "CS102", 111111, 26, true, 2, 1, false, false));
+				CourseTable.getInstance().add(courseInteractor.createCourse("cleark", "CS103", 111112, 26, true, 2, 1, false, false));
+				CourseTable.getInstance().add(courseInteractor.createCourse("cleark", "CS104", 111113, 26, true, 2, 1, false, false));
+				CourseTable.getInstance().add(courseInteractor.createCourse("cleark", "CS105", 111114, 26, true, 2, 1, false, true));
+		}
 	
 		@Test(expected = IllegalStateException.class)
 		public void duplicateCourseRegistrationThrowsException() {

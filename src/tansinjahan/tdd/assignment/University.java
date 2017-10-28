@@ -14,19 +14,36 @@ import tansinjahan.tdd.assignment.TermEventListener;;
 public class University implements TermEventListener{
 		
 		private List<Course> courses=new ArrayList<>();
+		
+		
 		private static final University INSTANCE = new University();
-		Logger logger = Trace.getInstance().getLogger(this);
+		private Logger logger = Trace.getInstance().getLogger(this);
 		
 		private TermState termState = TermState.NONE;
 		
 		private int universityCourseCount = 25; // Default course count 25
 		private int passRate = 70; // Default pass rate is 70
 		
-		public Course createCourse(String title, int capsize,boolean hasProject) {
-			Course course = hasProject? new ProjectCourse(title, capsize): new Course(title, capsize);
-			CourseTable.getInstance().add(course);
-			return course;
+		public Course createCourse(
+							String user, 
+							String title, 
+							int code, 
+							int capsize, 
+							boolean hasAFinal, 
+							int numberOfAssignments, 
+							int numberOfMidTerms, 
+							boolean enforcePrereqs, 
+							boolean isProjectCourse) {
+				if (hasCourseExists(code)) {
+							String errMsg = String.format("Course with code %d already exists", code);
+							throw new IllegalArgumentException(errMsg);
+						}
+				CourseInteractor interactor = new CourseInteractor(this);
+				Course course = interactor.createCourse(user, title, code, capsize, hasAFinal, numberOfAssignments, numberOfMidTerms, enforcePrereqs, isProjectCourse);
+				CourseTable.getInstance().add(course);
+				return course;
 		}
+		
 		
 		public enum TermState {
 			 		NONE,
@@ -65,12 +82,16 @@ public class University implements TermEventListener{
 		}
 		
 		public boolean hasCourseExists(int code) {
-			for(Course c: courses) {
+			for (Course c : CourseTable.getInstance().courses) {
 				if(c.getCode()== code) {
 					return true;
 				}
 			}
 			return false;
+		}
+		
+		public List<Course> courses() {
+					return CourseTable.getInstance().courses;
 		}
 		
 		public Student createStudent(String name, int studentNumber, String status) {
@@ -115,4 +136,5 @@ public class University implements TermEventListener{
 		public int getPassRate() {
 					return passRate;
 		}
+
 }

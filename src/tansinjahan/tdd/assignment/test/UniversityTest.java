@@ -6,6 +6,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import tansinjahan.tdd.assignment.CourseInteractor;
+import tansinjahan.tdd.assignment.CourseTable;
+import tansinjahan.tdd.assignment.StudentTable;
 import tansinjahan.tdd.assignment.University;
 import tansinjahan.tdd.assignment.University.TermState;
 import tansinjahan.tdd.assignment.TermEventListener;
@@ -14,11 +17,15 @@ import tansinjahan.tdd.assignment.TermSimulator;
 public class UniversityTest {
 	University versity;
 	TestTermSimulator simulator;
+	CourseInteractor interactor;
 	
 	@Before
 	public void setup() {
 		versity = University.getInstance();
 		simulator = new TestTermSimulator(versity);
+		interactor = new CourseInteractor(versity);
+		CourseTable.getInstance().clear();
+		StudentTable.getInstance().clear();
 	}
 	
 	@Test
@@ -100,5 +107,47 @@ public class UniversityTest {
 		public void universityPassRateSmallerThan_0_ThrowsException() {
 			versity.passRate(-1);
 		}
+		
+		@Test
+			public void testUniversityCourseListHasCourses() {
+				versity.createCourse(
+						"clerk", // user
+						"CS", // title,
+						110022, // code
+						26, // capsize
+						true, // hasAFinal
+						2, // numberOfAssignments,
+						1, // numberOfMidterms,
+						true, // enforcePrereqs)
+						false // isProjectCourse
+						);
+				assertEquals(1, versity.courses().size());
+			}
+			
+			@Test(expected = IllegalArgumentException.class)
+			public void attemptToCreateDuplicateCourseWithSameCodeThrowsException() {
+				versity.createCourse(
+						"clerk", // user
+						"CS", // title,
+						110022, // code
+						26, // capsize
+						true, // hasAFinal
+						2, // numberOfAssignments,
+						1, // numberOfMidterms,
+						true, // enforcePrereqs)
+						false // isProjectCourse
+						);
+				versity.createCourse(
+						"clerk", // user
+						"CS", // title,
+						110022, // code
+						26, // capsize
+						true, // hasAFinal
+						2, // numberOfAssignments,
+						1, // numberOfMidterms,
+						true, // enforcePrereqs)
+						false // isProjectCourse
+						);
+			}
 
 }
