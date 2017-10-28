@@ -95,9 +95,17 @@ public class University implements TermEventListener{
 		}
 		
 		public Student createStudent(String name, int studentNumber, String status) {
+			if (studentExist(studentNumber)) {
+							String errMsg = String.format("Student with student_number %d already exists", studentNumber);
+							throw new IllegalArgumentException(errMsg);
+						}
 			Student student = new Student(name, studentNumber, status);
 			StudentTable.getInstance().add(student);
 			return student;
+		}
+		
+		public List<Student> students() {
+					return StudentTable.getInstance().students;
 		}
 		
 		public static University getInstance() {
@@ -135,6 +143,15 @@ public class University implements TermEventListener{
 				
 		public int getPassRate() {
 					return passRate;
+		}
+		
+		public boolean studentExist(int studentNumber) {
+					for (Student s : StudentTable.getInstance().students) {
+						if (s.getStudentNumber() == studentNumber) {
+							return true;
+						}
+					}
+					return false;
 		}
 
 }

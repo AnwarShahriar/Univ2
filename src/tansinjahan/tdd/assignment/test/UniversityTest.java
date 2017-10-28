@@ -109,7 +109,7 @@ public class UniversityTest {
 		}
 		
 		@Test
-			public void testUniversityCourseListHasCourses() {
+		public void testUniversityCourseListHasCourses() {
 				versity.createCourse(
 						"clerk", // user
 						"CS", // title,
@@ -124,8 +124,8 @@ public class UniversityTest {
 				assertEquals(1, versity.courses().size());
 			}
 			
-			@Test(expected = IllegalArgumentException.class)
-			public void attemptToCreateDuplicateCourseWithSameCodeThrowsException() {
+		@Test(expected = IllegalArgumentException.class)
+		public void attemptToCreateDuplicateCourseWithSameCodeThrowsException() {
 				versity.createCourse(
 						"clerk", // user
 						"CS", // title,
@@ -149,5 +149,18 @@ public class UniversityTest {
 						false // isProjectCourse
 						);
 			}
+			
+		@Test
+		public void testUniversityStudentListHasStudents() {
+					versity.createStudent("John", 1,"Part time");
+					versity.createStudent("Noah", 2,"Full time");
+					assertEquals(2, versity.students().size());
+				}
+				
+		@Test(expected = IllegalArgumentException.class)
+		public void attemptToCreateDuplicateStudentWithSameNumberThrowsException() {
+					versity.createStudent("John", 1,"Part Time");
+					versity.createStudent("Noah", 1,"Full time");
+				}
 
 }
