@@ -181,6 +181,11 @@ public class University implements TermEventListener{
 						s.selectedCourses().remove(course);
 					}
 					course.students().clear();
+		}
+		
+		public void destroyCourse(Course course) {
+					cancelCourse(course);
+					CourseTable.getInstance().courses.remove(course);
 				}
 
 }
