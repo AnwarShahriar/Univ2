@@ -65,29 +65,34 @@ public class University implements TermEventListener{
 			 	}
 		
 		@Override
-			public void onTwoWeekPassedTillTermStarted() {
+		public void onTwoWeekPassedTillTermStarted() {
 				termState = TermState.TWO_WEEK_PASSED_AFTER_TERM_STARTED_STATE;
-			}
+				System.out.println(termState.name());
+		}
 			 
 		@Override
 		public void onCreate() {
 			 	termState = TermState.CREATE_STUDENT_COURSE_STATE;
-			 	}
+			 	System.out.println(termState.name());
+		}
 			 
 		@Override
 		public void onRegistrationPossible() {
 			 	termState = TermState.COURSE_REGISTRATION_STATE;
-			 	}
+			 	System.out.println(termState.name());
+		}
 			 
 		@Override
 		public void onTermProperlyStarted() {
 				termState = TermState.TERM_PROPERLY_STARTED_STATE;
-			 	}
+				System.out.println(termState.name());
+		}
 			 
 		@Override
 		public void onTermEnded() {
 			 	termState = TermState.TERM_END_STATE;
-			 	}
+			 	System.out.println(termState.name());
+		}
 			 
 		public String getName() {
 			return "Carleton";
@@ -106,7 +111,11 @@ public class University implements TermEventListener{
 					return CourseTable.getInstance().courses;
 		}
 		
-		public Student createStudent(String name, int studentNumber, String status) {
+		public Student createStudent(String name, int studentNumber, String status){
+			return createStudent(name, studentNumber, "", "", status);
+		}
+		
+		public Student createStudent(String name, int studentNumber, String email,String password,String status) {
 			if (termState != TermState.CREATE_STUDENT_COURSE_STATE) {
 							String errMsg = "Student cannot be created because student creation period is over";
 							throw new IllegalStateException(errMsg);
@@ -116,6 +125,8 @@ public class University implements TermEventListener{
 							throw new IllegalArgumentException(errMsg);
 						}
 			Student student = new Student(name, studentNumber, status);
+			student.setEmail(email);
+			student.setPassword(password);
 			StudentTable.getInstance().add(student);
 			return student;
 		}
@@ -217,7 +228,7 @@ public class University implements TermEventListener{
 		
 		public boolean dropCourse(Student student, Course course) {
 					if (termState != TermState.TWO_WEEK_PASSED_AFTER_TERM_STARTED_STATE) {
-						String errMsg = "Cannot drop a course before two weeks has been passed since course registration";
+						String errMsg = "Cannot drop a course before two weeks has been passed since term started properly";
 						throw new IllegalStateException(errMsg);
 					}
 					return student.dropCourse(course);

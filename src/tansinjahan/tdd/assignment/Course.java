@@ -179,5 +179,9 @@ public class Course {
 			return false;
 		return true;
 	}
+	
+	public String getTitle() {
+		 	return title;
+	}
 		 	
 }

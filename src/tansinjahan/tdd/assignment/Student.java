@@ -5,13 +5,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import server.logic.tables.StudentTable;
 
 public class Student {
 	private int studentNumber;
 	private String studentName;
 	private boolean fullTime;
 	private int maxCourseCount;
+	
+	private String email;
+	private String password;
 	
 	List<Integer> courseIDs=new ArrayList<>();
 	private List<Course> registeredCourses = new ArrayList<>();
@@ -34,14 +36,28 @@ public class Student {
 }
 
 	public void setMaxCourseOfStudent(String studentStatus) {
-		if(studentStatus == "full time"){
+		if(studentStatus.equalsIgnoreCase("full time")){
 			maxCourseCount = 4;
 		}
 		else 
-			maxCourseCount = 2;
-			
-		
+			maxCourseCount = 2;	
 	}
+	
+	public void setEmail(String email) {
+				this.email = email;
+			}
+			
+	public void setPassword(String password) {
+				this.password = password;
+			}
+			
+	public String getEmail() {
+				return email;
+			}
+			
+	public String getPassword() {
+				return password;
+			}
 	
 	public void registerCourse(Course course){
 		if (!selectedCourses.contains(course)) {

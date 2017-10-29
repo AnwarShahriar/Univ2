@@ -1,6 +1,10 @@
 package server.network;
 
 import java.io.IOException;
+import tansinjahan.tdd.assignment.CourseTable;
+import tansinjahan.tdd.assignment.StudentTable;
+import tansinjahan.tdd.assignment.TimerTermSimulator;
+import tansinjahan.tdd.assignment.University;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -21,17 +25,29 @@ public class LibServer implements Runnable{
 	private Logger logger = Trace.getInstance().getLogger(this);
 	InputHandler handler=new InputHandler();
 	private List<Client> clientList=new ArrayList<Client>();
+	
 	public LibServer(int port) {
 		try {
 			logger.info("Binding to port " + port);
 			clients = new HashMap<Integer, ServerThread>();
 			server = new ServerSocket(port);
 			server.setReuseAddress(true);
+			initUniversity();
 			start();
 		} catch (IOException ioe) {
 			logger.fatal(ioe);
 		}
 	}
+	
+	public void initUniversity() {
+		 		TimerTermSimulator simulation = new TimerTermSimulator(University.getInstance(), Config.SIMULATED_DAY);
+		 		CourseTable.getInstance().clear();
+		 		StudentTable.getInstance().clear();
+		 		simulation.start();
+		 		
+		 		CourseTable.createFakeCourse();
+		 		StudentTable.createFakeStudent();
+		 	}
 	
 	public void start() {
 		if (thread == null) {

@@ -3924,4 +3924,677 @@
 @2017-10-28 16:59:51 INFO  CourseInteractor:60 - Course is created with valid grade elements
 @2017-10-28 16:59:51 INFO  CourseInteractor:45 - Course is created with valid class size
 @2017-10-28 16:59:51 INFO  CourseInteractor:31 - Course is created with title CS and capsize 26
+@2017-10-29 13:02:41 INFO  LibClient:43 - Class: LibClient   : Exception thrown : Connection refused: connect 
+
+@2017-10-29 13:05:07 INFO  LibServer:31 - Binding to port 5050
+@2017-10-29 13:05:07 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 13:05:07 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 13:05:07 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 13:05:07 INFO  CourseInteractor:31 - Course is created with title Data Structure and capsize 27
+@2017-10-29 13:05:07 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 13:05:07 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 13:05:07 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 13:05:07 INFO  CourseInteractor:31 - Course is created with title Software Engineering and capsize 26
+@2017-10-29 13:05:07 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 13:05:07 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 13:05:07 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 13:05:07 INFO  CourseInteractor:31 - Course is created with title Machine Learning and capsize 28
+@2017-10-29 13:05:07 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 13:05:07 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 13:05:07 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 13:05:07 INFO  CourseInteractor:31 - Course is created with title Digital Electronics and capsize 30
+@2017-10-29 13:05:07 INFO  LibServer:67 - Waiting for a client ...
+@2017-10-29 13:05:07 INFO  LibServer:56 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5050] 11
+@2017-10-29 13:06:46 INFO  LibServer:76 - Client accepted : Client Address : [/127.0.0.1:51168] Client Socket: [51168 ]
+
+@2017-10-29 13:06:46 INFO  LibServer:67 - Waiting for a client ...
+@2017-10-29 13:06:46 INFO  LibClient:31 - 51168 : Connected to server: /127.0.0.1
+@2017-10-29 13:06:46 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__51168
+@2017-10-29 13:06:46 INFO  LibClient:32 - 51168 : Connected to portid: 51168
+@2017-10-29 13:06:46 INFO  LibClient:82 - Class: LibClient   : Exception thrown : The handle is invalid 
+
+@2017-10-29 13:06:46 INFO  LibClient:111 - Class: LibClient   : Exception thrown : The handle is invalid 
+
+@2017-10-29 13:07:31 INFO  LibServer:76 - Client accepted : Client Address : [/127.0.0.1:51170] Client Socket: [51170 ]
+
+@2017-10-29 13:07:31 INFO  LibServer:67 - Waiting for a client ...
+@2017-10-29 13:07:31 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__51170
+@2017-10-29 13:07:31 INFO  LibClient:31 - 51170 : Connected to server: /127.0.0.1
+@2017-10-29 13:07:31 INFO  LibClient:32 - 51170 : Connected to portid: 51170
+@2017-10-29 13:07:37 INFO  LibServer:106 - Input from 127.0.0.1:51170 Hello
+@2017-10-29 13:07:37 INFO  LibServer:123 - Output to 127.0.0.1:51170 Who Are you?Clerk or Student?
+
+@2017-10-29 13:07:41 INFO  LibServer:106 - Input from 127.0.0.1:51170 Clerk
+@2017-10-29 13:07:41 INFO  LibServer:115 - Output to 127.0.0.1:51170 Please Input The Password:
+
+@2017-10-29 13:07:45 INFO  LibServer:106 - Input from 127.0.0.1:51170 admin
+@2017-10-29 13:07:45 INFO  LibServer:115 - Output to 127.0.0.1:51170 
+Please select from the Menu:
+Create Student/Course
+Cancel Course
+Delete Student
+Main Menu
+Log Out
+
+@2017-10-29 13:08:03 INFO  LibServer:106 - Input from 127.0.0.1:51170 create student
+@2017-10-29 13:08:03 INFO  LibServer:115 - Output to 127.0.0.1:51170 Please Input Student Info: 'Name, Student Number, Email, Password'
+
+@2017-10-29 13:09:28 INFO  LibServer:106 - Input from 127.0.0.1:51170 Tansin,1234,tansin@gmail.com,1234
+@2017-10-29 13:09:28 INFO  LibServer:115 - Output to 127.0.0.1:51170 Fails: 4
+
+Please Input Student Info: 'Name, Student Number, email, password'
+
+@2017-10-29 13:09:50 INFO  LibServer:106 - Input from 127.0.0.1:51170 log out
+@2017-10-29 13:09:50 INFO  LibServer:115 - Output to 127.0.0.1:51170 Successfully Log Out!
+
+@2017-10-29 13:10:10 INFO  LibClient:82 - Class: LibClient   : Exception thrown : Connection reset by peer: socket write error 
+
+@2017-10-29 13:55:10 INFO  LibServer:31 - Binding to port 5050
+@2017-10-29 13:55:10 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 13:55:10 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 13:55:10 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 13:55:10 INFO  CourseInteractor:31 - Course is created with title Data Structure and capsize 27
+@2017-10-29 13:55:10 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 13:55:10 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 13:55:10 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 13:55:10 INFO  CourseInteractor:31 - Course is created with title Software Engineering and capsize 26
+@2017-10-29 13:55:10 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 13:55:10 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 13:55:10 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 13:55:10 INFO  CourseInteractor:31 - Course is created with title Machine Learning and capsize 28
+@2017-10-29 13:55:10 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 13:55:10 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 13:55:10 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 13:55:10 INFO  CourseInteractor:31 - Course is created with title Digital Electronics and capsize 30
+@2017-10-29 13:55:10 INFO  LibServer:56 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5050] 11
+@2017-10-29 13:55:10 INFO  LibServer:67 - Waiting for a client ...
+@2017-10-29 14:02:37 INFO  LibServer:31 - Binding to port 5050
+@2017-10-29 14:02:37 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:02:37 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:02:37 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:02:37 INFO  CourseInteractor:31 - Course is created with title Data Structure and capsize 27
+@2017-10-29 14:02:37 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:02:37 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:02:37 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:02:37 INFO  CourseInteractor:31 - Course is created with title Software Engineering and capsize 26
+@2017-10-29 14:02:37 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:02:37 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:02:37 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:02:37 INFO  CourseInteractor:31 - Course is created with title Machine Learning and capsize 28
+@2017-10-29 14:02:37 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:02:37 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:02:37 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:02:37 INFO  CourseInteractor:31 - Course is created with title Digital Electronics and capsize 30
+@2017-10-29 14:02:37 INFO  LibServer:56 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5050] 11
+@2017-10-29 14:02:37 INFO  LibServer:67 - Waiting for a client ...
+@2017-10-29 14:03:35 INFO  LibServer:76 - Client accepted : Client Address : [/127.0.0.1:51302] Client Socket: [51302 ]
+
+@2017-10-29 14:03:35 INFO  LibServer:67 - Waiting for a client ...
+@2017-10-29 14:03:35 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__51302
+@2017-10-29 14:03:35 INFO  LibClient:31 - 51302 : Connected to server: /127.0.0.1
+@2017-10-29 14:03:35 INFO  LibClient:32 - 51302 : Connected to portid: 51302
+@2017-10-29 14:03:37 INFO  LibServer:106 - Input from 127.0.0.1:51302 Hello
+@2017-10-29 14:03:37 INFO  LibServer:123 - Output to 127.0.0.1:51302 Who Are you?Clerk or Student?
+
+@2017-10-29 14:03:40 INFO  LibServer:106 - Input from 127.0.0.1:51302 Clerk
+@2017-10-29 14:03:40 INFO  LibServer:115 - Output to 127.0.0.1:51302 Please Input The Password:
+
+@2017-10-29 14:03:47 INFO  LibServer:106 - Input from 127.0.0.1:51302 admin
+@2017-10-29 14:03:47 INFO  LibServer:115 - Output to 127.0.0.1:51302 
+Please select from the Menu:
+Create Student/Course
+Cancel Course
+Delete Student
+Main Menu
+Log Out
+
+@2017-10-29 14:04:07 INFO  LibServer:106 - Input from 127.0.0.1:51302 create student 
+@2017-10-29 14:04:07 INFO  LibServer:115 - Output to 127.0.0.1:51302 
+Please select from the Menu:
+Create Student/Course
+Cancel Course
+Delete Student
+Main Menu
+Log Out
+
+@2017-10-29 14:04:15 INFO  LibServer:106 - Input from 127.0.0.1:51302 Create Student
+@2017-10-29 14:04:15 INFO  LibServer:115 - Output to 127.0.0.1:51302 Please Input Student Info: 'Name, Student Number, Email, Password, status(full time/part time)'
+
+@2017-10-29 14:05:07 INFO  LibServer:106 - Input from 127.0.0.1:51302 Tansin,1234,t@gmail,1223,full time
+@2017-10-29 14:05:07 INFO  LibServer:115 - Output to 127.0.0.1:51302 Your input should be in this format: 'Name, Student Number, Email, Password, status'
+
+@2017-10-29 14:08:31 INFO  LibServer:106 - Input from 127.0.0.1:51302 Tansin,1234,t@gmail,1223,full time
+@2017-10-29 14:08:31 INFO  LibServer:115 - Output to 127.0.0.1:51302 Your input should be in this format: 'Name, Student Number, Email, Password, status'
+
+@2017-10-29 14:09:04 INFO  ServerThread:60 - Class: ServerThread: Exception thrown : Connection reset 
+
+@2017-10-29 14:09:21 INFO  LibServer:31 - Binding to port 5050
+@2017-10-29 14:09:21 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:09:21 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:09:21 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:09:21 INFO  CourseInteractor:31 - Course is created with title Data Structure and capsize 27
+@2017-10-29 14:09:21 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:09:21 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:09:21 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:09:21 INFO  CourseInteractor:31 - Course is created with title Software Engineering and capsize 26
+@2017-10-29 14:09:21 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:09:21 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:09:21 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:09:21 INFO  CourseInteractor:31 - Course is created with title Machine Learning and capsize 28
+@2017-10-29 14:09:21 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:09:21 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:09:21 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:09:21 INFO  CourseInteractor:31 - Course is created with title Digital Electronics and capsize 30
+@2017-10-29 14:09:21 INFO  LibServer:56 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5050] 11
+@2017-10-29 14:09:21 INFO  LibServer:67 - Waiting for a client ...
+@2017-10-29 14:10:04 INFO  LibServer:76 - Client accepted : Client Address : [/127.0.0.1:51311] Client Socket: [51311 ]
+
+@2017-10-29 14:10:04 INFO  LibServer:67 - Waiting for a client ...
+@2017-10-29 14:10:04 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__51311
+@2017-10-29 14:10:04 INFO  LibClient:31 - 51311 : Connected to server: /127.0.0.1
+@2017-10-29 14:10:04 INFO  LibClient:32 - 51311 : Connected to portid: 51311
+@2017-10-29 14:10:07 INFO  LibServer:106 - Input from 127.0.0.1:51311 Hello
+@2017-10-29 14:10:07 INFO  LibServer:123 - Output to 127.0.0.1:51311 Who Are you?Clerk or Student?
+
+@2017-10-29 14:10:10 INFO  LibServer:106 - Input from 127.0.0.1:51311 Clerk
+@2017-10-29 14:10:10 INFO  LibServer:115 - Output to 127.0.0.1:51311 Please Input The Password:
+
+@2017-10-29 14:10:13 INFO  LibServer:106 - Input from 127.0.0.1:51311 admin
+@2017-10-29 14:10:13 INFO  LibServer:115 - Output to 127.0.0.1:51311 
+Please select from the Menu:
+Create Student/Course
+Cancel Course
+Delete Student
+Main Menu
+Log Out
+
+@2017-10-29 14:10:30 INFO  LibServer:106 - Input from 127.0.0.1:51311 create student
+@2017-10-29 14:10:30 INFO  LibServer:115 - Output to 127.0.0.1:51311 Please Input Student Info: 'Name, Student Number, Email, Password, status(full time/part time)'
+
+@2017-10-29 14:10:54 INFO  LibServer:106 - Input from 127.0.0.1:51311 Tansin,1234,t@gmail.com,112,full time
+@2017-10-29 14:10:54 INFO  LibServer:115 - Output to 127.0.0.1:51311 Your input should be in this format: 'Name, Student Number, Email, Password, status'
+
+@2017-10-29 14:11:20 INFO  LibServer:106 - Input from 127.0.0.1:51311 Tansin,1234,t@gmail.com,112,Full Time
+@2017-10-29 14:11:20 INFO  LibServer:115 - Output to 127.0.0.1:51311 Your input should be in this format: 'Name, Student Number, Email, Password, status'
+
+@2017-10-29 14:11:39 INFO  LibServer:106 - Input from 127.0.0.1:51311 null
+@2017-10-29 14:11:39 INFO  LibServer:115 - Output to 127.0.0.1:51311 Your input should be in this format: 'Name, Student Number, Email, Password, status'
+
+@2017-10-29 14:11:39 INFO  ServerThread:60 - Class: ServerThread: Exception thrown : Connection reset 
+
+@2017-10-29 14:14:15 INFO  LibServer:31 - Binding to port 5050
+@2017-10-29 14:14:16 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:14:16 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:14:16 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:14:16 INFO  CourseInteractor:31 - Course is created with title Data Structure and capsize 27
+@2017-10-29 14:14:16 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:14:16 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:14:16 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:14:16 INFO  CourseInteractor:31 - Course is created with title Software Engineering and capsize 26
+@2017-10-29 14:14:16 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:14:16 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:14:16 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:14:16 INFO  CourseInteractor:31 - Course is created with title Machine Learning and capsize 28
+@2017-10-29 14:14:16 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:14:16 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:14:16 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:14:16 INFO  CourseInteractor:31 - Course is created with title Digital Electronics and capsize 30
+@2017-10-29 14:14:16 INFO  LibServer:67 - Waiting for a client ...
+@2017-10-29 14:14:16 INFO  LibServer:56 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5050] 11
+@2017-10-29 14:14:28 INFO  LibServer:76 - Client accepted : Client Address : [/127.0.0.1:51327] Client Socket: [51327 ]
+
+@2017-10-29 14:14:28 INFO  LibServer:67 - Waiting for a client ...
+@2017-10-29 14:14:28 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__51327
+@2017-10-29 14:14:28 INFO  LibClient:31 - 51327 : Connected to server: /127.0.0.1
+@2017-10-29 14:14:28 INFO  LibClient:32 - 51327 : Connected to portid: 51327
+@2017-10-29 14:14:31 INFO  LibServer:106 - Input from 127.0.0.1:51327 Hello
+@2017-10-29 14:14:31 INFO  LibServer:123 - Output to 127.0.0.1:51327 Who Are you?Clerk or Student?
+
+@2017-10-29 14:14:34 INFO  LibServer:106 - Input from 127.0.0.1:51327 Clerk
+@2017-10-29 14:14:34 INFO  LibServer:115 - Output to 127.0.0.1:51327 Please Input The Password:
+
+@2017-10-29 14:14:36 INFO  LibServer:106 - Input from 127.0.0.1:51327 admin
+@2017-10-29 14:14:36 INFO  LibServer:115 - Output to 127.0.0.1:51327 
+Please select from the Menu:
+Create Student/Course
+Cancel Course
+Delete Student
+Main Menu
+Log Out
+
+@2017-10-29 14:14:41 INFO  LibServer:106 - Input from 127.0.0.1:51327 create student
+@2017-10-29 14:14:41 INFO  LibServer:115 - Output to 127.0.0.1:51327 Please Input Student Info: 'Name, Student Number, Email, Password, status(full time/part time)'
+
+@2017-10-29 14:15:00 INFO  LibServer:106 - Input from 127.0.0.1:51327 Tithy,1234,t@gmail,full time
+@2017-10-29 14:15:00 INFO  LibServer:115 - Output to 127.0.0.1:51327 Your input should be in this format: 'Name, Student Number, Email, Password, status'
+
+@2017-10-29 14:15:15 INFO  LibServer:106 - Input from 127.0.0.1:51327 Tithy,1234,t@gmail,1234,full time
+@2017-10-29 14:15:15 INFO  LibServer:115 - Output to 127.0.0.1:51327 Success!
+
+@2017-10-29 14:15:31 INFO  LibServer:106 - Input from 127.0.0.1:51327 
+@2017-10-29 14:15:31 INFO  LibServer:115 - Output to 127.0.0.1:51327 
+Please select from the Menu:
+Create Student/Course
+Cancel Course
+Delete Student
+Main Menu
+Log Out
+
+@2017-10-29 14:15:42 INFO  LibServer:106 - Input from 127.0.0.1:51327 create course
+@2017-10-29 14:15:42 INFO  LibServer:115 - Output to 127.0.0.1:51327 Please Input Course Info as given format: 
+'Title, Code, Capcity Size, Has Final(True/False), Assignment Count, MidTerm Count, Enforce Prerequisites(True/False), Has Project(True/False)'
+
+@2017-10-29 14:16:38 INFO  LibServer:106 - Input from 127.0.0.1:51327 "OOP",123,27,True,1,1,False,False
+@2017-10-29 14:16:38 INFO  LibServer:115 - Output to 127.0.0.1:51327 Fails: Course cannot be created because course creation period is over
+
+Please Input Course Info as given format: 
+'Title, Code, Capcity Size, Has Final(True/False), Assignment Count, MidTerm Count, Enforce Prerequisites(True/False), Has Project(True/False)'
+
+@2017-10-29 14:16:57 INFO  LibServer:106 - Input from 127.0.0.1:51327 
+@2017-10-29 14:16:57 INFO  LibServer:115 - Output to 127.0.0.1:51327 Please Input Course Info as given format: 
+'Title, Code, Capcity Size, Has Final(True/False), Assignment Count, MidTerm Count, Enforce Prerequisites(True/False), Has Project(True/False)'
+
+@2017-10-29 14:17:01 INFO  LibServer:106 - Input from 127.0.0.1:51327 
+@2017-10-29 14:17:01 INFO  LibServer:115 - Output to 127.0.0.1:51327 Please Input Course Info as given format: 
+'Title, Code, Capcity Size, Has Final(True/False), Assignment Count, MidTerm Count, Enforce Prerequisites(True/False), Has Project(True/False)'
+
+@2017-10-29 14:17:07 INFO  LibServer:106 - Input from 127.0.0.1:51327 main menu
+@2017-10-29 14:17:07 INFO  LibServer:115 - Output to 127.0.0.1:51327 
+Please select from the Menu:
+Create Student/Course
+Cancel Course
+Delete Student
+Main Menu
+Log Out
+
+@2017-10-29 14:22:11 INFO  LibServer:106 - Input from 127.0.0.1:51327 null
+@2017-10-29 14:22:11 INFO  LibServer:115 - Output to 127.0.0.1:51327 
+Please select from the Menu:
+Create Student/Course
+Cancel Course
+Delete Student
+Main Menu
+Log Out
+
+@2017-10-29 14:22:11 INFO  ServerThread:60 - Class: ServerThread: Exception thrown : Connection reset 
+
+@2017-10-29 14:22:36 INFO  LibServer:31 - Binding to port 5050
+@2017-10-29 14:22:36 FATAL LibServer:38 - java.net.BindException: Address already in use: JVM_Bind
+@2017-10-29 14:23:59 INFO  LibServer:31 - Binding to port 5050
+@2017-10-29 14:23:59 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:23:59 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:23:59 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:23:59 INFO  CourseInteractor:31 - Course is created with title Data Structure and capsize 27
+@2017-10-29 14:23:59 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:23:59 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:23:59 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:23:59 INFO  CourseInteractor:31 - Course is created with title Software Engineering and capsize 26
+@2017-10-29 14:23:59 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:23:59 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:23:59 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:23:59 INFO  CourseInteractor:31 - Course is created with title Machine Learning and capsize 28
+@2017-10-29 14:23:59 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:23:59 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:23:59 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:23:59 INFO  CourseInteractor:31 - Course is created with title Digital Electronics and capsize 30
+@2017-10-29 14:23:59 INFO  LibServer:56 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5050] 11
+@2017-10-29 14:23:59 INFO  LibServer:67 - Waiting for a client ...
+@2017-10-29 14:24:09 INFO  LibServer:76 - Client accepted : Client Address : [/127.0.0.1:51415] Client Socket: [51415 ]
+
+@2017-10-29 14:24:09 INFO  LibServer:67 - Waiting for a client ...
+@2017-10-29 14:24:09 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__51415
+@2017-10-29 14:24:09 INFO  LibClient:31 - 51415 : Connected to server: /127.0.0.1
+@2017-10-29 14:24:09 INFO  LibClient:32 - 51415 : Connected to portid: 51415
+@2017-10-29 14:24:12 INFO  LibServer:106 - Input from 127.0.0.1:51415 Hello
+@2017-10-29 14:24:12 INFO  LibServer:123 - Output to 127.0.0.1:51415 Who Are you?Clerk or Student?
+
+@2017-10-29 14:24:15 INFO  LibServer:106 - Input from 127.0.0.1:51415 Clerk
+@2017-10-29 14:24:15 INFO  LibServer:115 - Output to 127.0.0.1:51415 Please Input The Password:
+
+@2017-10-29 14:24:18 INFO  LibServer:106 - Input from 127.0.0.1:51415 admin
+@2017-10-29 14:24:18 INFO  LibServer:115 - Output to 127.0.0.1:51415 
+Please select from the Menu:
+Create Student/Course
+Cancel Course
+Delete Student
+Main Menu
+Log Out
+
+@2017-10-29 14:24:27 INFO  LibServer:106 - Input from 127.0.0.1:51415 create student
+@2017-10-29 14:24:27 INFO  LibServer:115 - Output to 127.0.0.1:51415 Please Input Student Info: 'Name, Student Number, Email, Password, status(full time/part time)'
+
+@2017-10-29 14:24:55 INFO  LibServer:106 - Input from 127.0.0.1:51415 tansin,111,t@gmail.com,123,part time
+@2017-10-29 14:24:55 INFO  LibServer:115 - Output to 127.0.0.1:51415 Success!
+
+@2017-10-29 14:24:58 INFO  LibServer:106 - Input from 127.0.0.1:51415 
+@2017-10-29 14:24:58 INFO  LibServer:115 - Output to 127.0.0.1:51415 
+Please select from the Menu:
+Create Student/Course
+Cancel Course
+Delete Student
+Main Menu
+Log Out
+
+@2017-10-29 14:25:05 INFO  LibServer:106 - Input from 127.0.0.1:51415 create course
+@2017-10-29 14:25:05 INFO  LibServer:115 - Output to 127.0.0.1:51415 Please Input Course Info as given format: 
+'Title, Code, Capcity Size, Has Final(True/False), Assignment Count, MidTerm Count, Enforce Prerequisites(True/False), Has Project(True/False)'
+
+@2017-10-29 14:25:50 INFO  LibServer:106 - Input from 127.0.0.1:51415 oop,CSE312,40,True,1,1,False
+@2017-10-29 14:25:50 INFO  LibServer:115 - Output to 127.0.0.1:51415 Please Input Course Info as given format: 
+'Title, Code, Capcity Size, Has Final(True/False), Assignment Count, MidTerm Count, Enforce Prerequisites(True/False), Has Project(True/False)'
+
+@2017-10-29 14:25:55 INFO  LibServer:106 - Input from 127.0.0.1:51415 null
+@2017-10-29 14:25:55 INFO  LibServer:115 - Output to 127.0.0.1:51415 Please Input Course Info as given format: 
+'Title, Code, Capcity Size, Has Final(True/False), Assignment Count, MidTerm Count, Enforce Prerequisites(True/False), Has Project(True/False)'
+
+@2017-10-29 14:25:56 INFO  ServerThread:60 - Class: ServerThread: Exception thrown : Connection reset 
+
+@2017-10-29 14:26:21 INFO  LibServer:31 - Binding to port 5050
+@2017-10-29 14:26:21 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:26:21 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:26:21 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:26:21 INFO  CourseInteractor:31 - Course is created with title Data Structure and capsize 27
+@2017-10-29 14:26:21 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:26:21 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:26:21 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:26:21 INFO  CourseInteractor:31 - Course is created with title Software Engineering and capsize 26
+@2017-10-29 14:26:21 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:26:21 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:26:21 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:26:21 INFO  CourseInteractor:31 - Course is created with title Machine Learning and capsize 28
+@2017-10-29 14:26:21 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:26:21 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:26:21 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:26:21 INFO  CourseInteractor:31 - Course is created with title Digital Electronics and capsize 30
+@2017-10-29 14:26:21 INFO  LibServer:56 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5050] 11
+@2017-10-29 14:26:21 INFO  LibServer:67 - Waiting for a client ...
+@2017-10-29 14:26:30 INFO  LibServer:76 - Client accepted : Client Address : [/127.0.0.1:51444] Client Socket: [51444 ]
+
+@2017-10-29 14:26:30 INFO  LibServer:67 - Waiting for a client ...
+@2017-10-29 14:26:30 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__51444
+@2017-10-29 14:26:30 INFO  LibClient:31 - 51444 : Connected to server: /127.0.0.1
+@2017-10-29 14:26:30 INFO  LibClient:32 - 51444 : Connected to portid: 51444
+@2017-10-29 14:26:34 INFO  LibServer:106 - Input from 127.0.0.1:51444 Hello
+@2017-10-29 14:26:34 INFO  LibServer:123 - Output to 127.0.0.1:51444 Who Are you?Clerk or Student?
+
+@2017-10-29 14:26:39 INFO  LibServer:106 - Input from 127.0.0.1:51444 Clerk
+@2017-10-29 14:26:39 INFO  LibServer:115 - Output to 127.0.0.1:51444 Please Input The Password:
+
+@2017-10-29 14:26:42 INFO  LibServer:106 - Input from 127.0.0.1:51444 admin
+@2017-10-29 14:26:42 INFO  LibServer:115 - Output to 127.0.0.1:51444 
+Please select from the Menu:
+Create Student/Course
+Cancel Course
+Delete Student
+Main Menu
+Log Out
+
+@2017-10-29 14:26:48 INFO  LibServer:106 - Input from 127.0.0.1:51444 create course
+@2017-10-29 14:26:48 INFO  LibServer:115 - Output to 127.0.0.1:51444 Please Input Course Info as given format: 
+'Title, Code, Capcity Size, Has Final(True/False), Assignment Count, MidTerm Count, Enforce Prerequisites(True/False), Has Project(True/False)'
+
+@2017-10-29 14:27:09 INFO  LibServer:106 - Input from 127.0.0.1:51444 oop,112,34,True,1,1,False,True
+@2017-10-29 14:27:09 INFO  LibServer:115 - Output to 127.0.0.1:51444 Fails: Code must be of length 6 and first digit cannot be zero
+
+Please Input Course Info as given format: 
+'Title, Code, Capcity Size, Has Final(True/False), Assignment Count, MidTerm Count, Enforce Prerequisites(True/False), Has Project(True/False)'
+
+@2017-10-29 14:27:30 INFO  LibServer:106 - Input from 127.0.0.1:51444 oop,112345,34,True,1,1,False,True
+@2017-10-29 14:27:30 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:27:30 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:27:30 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:27:30 INFO  CourseInteractor:31 - Course is created with title oop and capsize 34
+@2017-10-29 14:27:30 INFO  LibServer:115 - Output to 127.0.0.1:51444 Success!
+
+@2017-10-29 14:27:40 INFO  LibServer:106 - Input from 127.0.0.1:51444 main menu
+@2017-10-29 14:27:40 INFO  LibServer:115 - Output to 127.0.0.1:51444 
+Please select from the Menu:
+Create Student/Course
+Cancel Course
+Delete Student
+Main Menu
+Log Out
+
+@2017-10-29 14:27:54 INFO  LibServer:106 - Input from 127.0.0.1:51444 log out
+@2017-10-29 14:27:54 INFO  LibServer:115 - Output to 127.0.0.1:51444 Successfully Log Out!
+
+@2017-10-29 14:27:56 INFO  LibServer:106 - Input from 127.0.0.1:51444 
+@2017-10-29 14:27:56 INFO  LibServer:115 - Output to 127.0.0.1:51444 Who Are you?Clerk or Student?
+
+@2017-10-29 14:28:02 INFO  LibServer:106 - Input from 127.0.0.1:51444 Student
+@2017-10-29 14:28:02 INFO  LibServer:115 - Output to 127.0.0.1:51444 Please Input Email and Password:'email,password'
+
+@2017-10-29 14:28:21 INFO  LibServer:106 - Input from 127.0.0.1:51444 t@gmail.com,111
+@2017-10-29 14:28:21 INFO  LibServer:115 - Output to 127.0.0.1:51444 Username or Password is wrong! Please, input the Email and Password:'email,password'
+
+@2017-10-29 14:28:53 INFO  LibServer:106 - Input from 127.0.0.1:51444 t@gmail.com,123
+@2017-10-29 14:28:53 INFO  LibServer:115 - Output to 127.0.0.1:51444 Username or Password is wrong! Please, input the Email and Password:'email,password'
+
+@2017-10-29 14:29:01 INFO  LibServer:106 - Input from 127.0.0.1:51444 main menu
+@2017-10-29 14:29:01 INFO  LibServer:115 - Output to 127.0.0.1:51444 Your input should in this format:'email,password'
+
+@2017-10-29 14:29:36 INFO  LibServer:106 - Input from 127.0.0.1:51444 t@gmail.com,123
+@2017-10-29 14:29:36 INFO  LibServer:115 - Output to 127.0.0.1:51444 Username or Password is wrong! Please, input the Email and Password:'email,password'
+
+@2017-10-29 14:29:50 INFO  LibServer:106 - Input from 127.0.0.1:51444 main menu
+@2017-10-29 14:29:50 INFO  LibServer:115 - Output to 127.0.0.1:51444 Your input should in this format:'email,password'
+
+@2017-10-29 14:29:53 INFO  LibServer:106 - Input from 127.0.0.1:51444 log out
+@2017-10-29 14:29:53 INFO  LibServer:115 - Output to 127.0.0.1:51444 Your input should in this format:'email,password'
+
+@2017-10-29 14:30:49 INFO  LibServer:106 - Input from 127.0.0.1:51444 t@gmail.com,1234
+@2017-10-29 14:30:49 INFO  LibServer:115 - Output to 127.0.0.1:51444 Username or Password is wrong! Please, input the Email and Password:'email,password'
+
+@2017-10-29 14:30:58 INFO  LibServer:106 - Input from 127.0.0.1:51444 null
+@2017-10-29 14:30:58 INFO  LibServer:115 - Output to 127.0.0.1:51444 Your input should in this format:'email,password'
+
+@2017-10-29 14:30:59 INFO  ServerThread:60 - Class: ServerThread: Exception thrown : Connection reset 
+
+@2017-10-29 14:33:32 INFO  LibClient:43 - Class: LibClient   : Exception thrown : Connection refused: connect 
+
+@2017-10-29 14:35:17 INFO  LibServer:31 - Binding to port 5050
+@2017-10-29 14:35:17 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:35:17 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:35:17 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:35:17 INFO  CourseInteractor:31 - Course is created with title Data Structure and capsize 27
+@2017-10-29 14:35:17 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:35:17 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:35:17 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:35:17 INFO  CourseInteractor:31 - Course is created with title Software Engineering and capsize 26
+@2017-10-29 14:35:17 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:35:17 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:35:17 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:35:17 INFO  CourseInteractor:31 - Course is created with title Machine Learning and capsize 28
+@2017-10-29 14:35:17 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:35:17 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:35:17 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:35:17 INFO  CourseInteractor:31 - Course is created with title Digital Electronics and capsize 30
+@2017-10-29 14:35:17 INFO  LibServer:67 - Waiting for a client ...
+@2017-10-29 14:35:17 INFO  LibServer:56 - Server started: ServerSocket[addr=0.0.0.0/0.0.0.0,localport=5050] 11
+@2017-10-29 14:35:43 INFO  LibServer:76 - Client accepted : Client Address : [/127.0.0.1:51551] Client Socket: [51551 ]
+
+@2017-10-29 14:35:43 INFO  LibServer:67 - Waiting for a client ...
+@2017-10-29 14:35:43 INFO  ServerThread:53 - Class: ServerThread: Server Thread Running__51551
+@2017-10-29 14:35:43 INFO  LibClient:31 - 51551 : Connected to server: /127.0.0.1
+@2017-10-29 14:35:43 INFO  LibClient:32 - 51551 : Connected to portid: 51551
+@2017-10-29 14:35:45 INFO  LibServer:106 - Input from 127.0.0.1:51551 Hello
+@2017-10-29 14:35:45 INFO  LibServer:123 - Output to 127.0.0.1:51551 Who Are you?Clerk or Student?
+
+@2017-10-29 14:35:52 INFO  LibServer:106 - Input from 127.0.0.1:51551 Student
+@2017-10-29 14:35:52 INFO  LibServer:115 - Output to 127.0.0.1:51551 Please Input Email and Password:'email,password'
+
+@2017-10-29 14:36:34 INFO  LibServer:106 - Input from 127.0.0.1:51551 lee@gotham,12345
+@2017-10-29 14:36:34 INFO  LibServer:115 - Output to 127.0.0.1:51551 
+Please select from the Menu:
+Register Course
+Drop Course
+Take Course
+Main Menu
+Log Out
+
+@2017-10-29 14:36:46 INFO  LibServer:106 - Input from 127.0.0.1:51551 Log out
+@2017-10-29 14:36:46 INFO  LibServer:115 - Output to 127.0.0.1:51551 Successfully Log Out!
+
+@2017-10-29 14:36:49 INFO  LibServer:106 - Input from 127.0.0.1:51551 
+@2017-10-29 14:36:49 INFO  LibServer:115 - Output to 127.0.0.1:51551 Who Are you?Clerk or Student?
+
+@2017-10-29 14:36:51 INFO  LibServer:106 - Input from 127.0.0.1:51551 Clerk
+@2017-10-29 14:36:51 INFO  LibServer:115 - Output to 127.0.0.1:51551 Please Input The Password:
+
+@2017-10-29 14:36:55 INFO  LibServer:106 - Input from 127.0.0.1:51551 admin
+@2017-10-29 14:36:55 INFO  LibServer:115 - Output to 127.0.0.1:51551 
+Please select from the Menu:
+Create Student/Course
+Cancel Course
+Delete Student
+Main Menu
+Log Out
+
+@2017-10-29 14:37:07 INFO  LibServer:106 - Input from 127.0.0.1:51551 create student
+@2017-10-29 14:37:07 INFO  LibServer:115 - Output to 127.0.0.1:51551 Please Input Student Info: 'Name, Student Number, Email, Password, status(full time/part time)'
+
+@2017-10-29 14:37:48 INFO  LibServer:106 - Input from 127.0.0.1:51551 TansinJahan,123456,tns@gmail.com,123456789,full time
+@2017-10-29 14:37:48 INFO  LibServer:115 - Output to 127.0.0.1:51551 Success!
+
+@2017-10-29 14:37:50 INFO  LibServer:106 - Input from 127.0.0.1:51551 
+@2017-10-29 14:37:50 INFO  LibServer:115 - Output to 127.0.0.1:51551 
+Please select from the Menu:
+Create Student/Course
+Cancel Course
+Delete Student
+Main Menu
+Log Out
+
+@2017-10-29 14:38:02 INFO  LibServer:106 - Input from 127.0.0.1:51551 create course
+@2017-10-29 14:38:02 INFO  LibServer:115 - Output to 127.0.0.1:51551 Please Input Course Info as given format: 
+'Title, Code, Capcity Size, Has Final(True/False), Assignment Count, MidTerm Count, Enforce Prerequisites(True/False), Has Project(True/False)'
+
+@2017-10-29 14:38:35 INFO  LibServer:106 - Input from 127.0.0.1:51551 mining software,34,true,2,1,false,true
+@2017-10-29 14:38:35 INFO  LibServer:115 - Output to 127.0.0.1:51551 Please Input Course Info as given format: 
+'Title, Code, Capcity Size, Has Final(True/False), Assignment Count, MidTerm Count, Enforce Prerequisites(True/False), Has Project(True/False)'
+
+@2017-10-29 14:39:17 INFO  LibServer:106 - Input from 127.0.0.1:51551 mining software,112345,34,true,2,1,false,true
+@2017-10-29 14:39:17 INFO  CourseInteractor:51 - Course is created with valid code
+@2017-10-29 14:39:17 INFO  CourseInteractor:60 - Course is created with valid grade elements
+@2017-10-29 14:39:17 INFO  CourseInteractor:45 - Course is created with valid class size
+@2017-10-29 14:39:17 INFO  CourseInteractor:31 - Course is created with title mining software and capsize 34
+@2017-10-29 14:39:17 INFO  LibServer:115 - Output to 127.0.0.1:51551 Success!
+
+@2017-10-29 14:39:25 INFO  LibServer:106 - Input from 127.0.0.1:51551 log out
+@2017-10-29 14:39:25 INFO  LibServer:115 - Output to 127.0.0.1:51551 Successfully Log Out!
+
+@2017-10-29 14:39:27 INFO  LibServer:106 - Input from 127.0.0.1:51551 
+@2017-10-29 14:39:27 INFO  LibServer:115 - Output to 127.0.0.1:51551 Who Are you?Clerk or Student?
+
+@2017-10-29 14:39:30 INFO  LibServer:106 - Input from 127.0.0.1:51551 Student
+@2017-10-29 14:39:30 INFO  LibServer:115 - Output to 127.0.0.1:51551 Please Input Email and Password:'email,password'
+
+@2017-10-29 14:39:41 INFO  LibServer:106 - Input from 127.0.0.1:51551 tns@gmail.com,123456789
+@2017-10-29 14:39:41 INFO  LibServer:115 - Output to 127.0.0.1:51551 
+Please select from the Menu:
+Register Course
+Drop Course
+Take Course
+Main Menu
+Log Out
+
+@2017-10-29 14:39:53 INFO  LibServer:106 - Input from 127.0.0.1:51551 register course
+@2017-10-29 14:39:53 INFO  LibServer:115 - Output to 127.0.0.1:51551 
+=> There is no selected course to register
+
+Please select from the Menu:
+Register Course
+Drop Course
+Take Course
+Main Menu
+Log Out
+
+@2017-10-29 14:40:08 INFO  LibServer:106 - Input from 127.0.0.1:51551 take course
+@2017-10-29 14:40:08 INFO  LibServer:115 - Output to 127.0.0.1:51551 
+Please input Course Code from the courses below to select:
+Title: Data Structure, Code: 112233
+Title: Software Engineering, Code: 223344
+Title: Machine Learning, Code: 334455
+Title: Digital Electronics, Code: 445566
+Title: mining software, Code: 112345
+
+
+@2017-10-29 14:40:25 INFO  LibServer:106 - Input from 127.0.0.1:51551 112345
+@2017-10-29 14:40:25 INFO  LibServer:115 - Output to 127.0.0.1:51551 Success!
+
+@2017-10-29 14:40:27 INFO  LibServer:106 - Input from 127.0.0.1:51551 
+@2017-10-29 14:40:27 INFO  LibServer:115 - Output to 127.0.0.1:51551 
+Please select from the Menu:
+Register Course
+Drop Course
+Take Course
+Main Menu
+Log Out
+
+@2017-10-29 14:40:32 INFO  LibServer:106 - Input from 127.0.0.1:51551 register course
+@2017-10-29 14:40:32 INFO  LibServer:115 - Output to 127.0.0.1:51551 
+Please input Course Code from the selected courses below to register:
+Title: mining software, Code: 112345
+
+
+@2017-10-29 14:40:48 INFO  LibServer:106 - Input from 127.0.0.1:51551 112345
+@2017-10-29 14:40:48 INFO  LibServer:115 - Output to 127.0.0.1:51551 Fails: Time for course registration in this term has been passed or not yet been started
+
+Try again later.
+
+@2017-10-29 14:42:16 INFO  LibServer:106 - Input from 127.0.0.1:51551 112345
+@2017-10-29 14:42:16 INFO  LibServer:115 - Output to 127.0.0.1:51551 
+Please select from the Menu:
+Register Course
+Drop Course
+Take Course
+Main Menu
+Log Out
+
+@2017-10-29 14:42:24 INFO  LibServer:106 - Input from 127.0.0.1:51551 take course
+@2017-10-29 14:42:24 INFO  LibServer:115 - Output to 127.0.0.1:51551 
+Please input Course Code from the courses below to select:
+Title: Data Structure, Code: 112233
+Title: Software Engineering, Code: 223344
+Title: Machine Learning, Code: 334455
+Title: Digital Electronics, Code: 445566
+Title: mining software, Code: 112345
+
+
+@2017-10-29 14:42:33 INFO  LibServer:106 - Input from 127.0.0.1:51551 112233
+@2017-10-29 14:42:33 INFO  LibServer:115 - Output to 127.0.0.1:51551 Success!
+
+@2017-10-29 14:42:38 INFO  LibServer:106 - Input from 127.0.0.1:51551 
+@2017-10-29 14:42:38 INFO  LibServer:115 - Output to 127.0.0.1:51551 
+Please select from the Menu:
+Register Course
+Drop Course
+Take Course
+Main Menu
+Log Out
+
+@2017-10-29 14:42:43 INFO  LibServer:106 - Input from 127.0.0.1:51551 register course
+@2017-10-29 14:42:43 INFO  LibServer:115 - Output to 127.0.0.1:51551 
+Please input Course Code from the selected courses below to register:
+Title: mining software, Code: 112345
+Title: Data Structure, Code: 112233
+
+
+@2017-10-29 14:42:51 INFO  LibServer:106 - Input from 127.0.0.1:51551 112345
+@2017-10-29 14:42:51 INFO  LibServer:115 - Output to 127.0.0.1:51551 Success!
+
+@2017-10-29 14:47:05 INFO  LibServer:106 - Input from 127.0.0.1:51551 drop course
+@2017-10-29 14:47:05 INFO  LibServer:115 - Output to 127.0.0.1:51551 
+Please input Course Code from the registered courses below to drop:
+Title: mining software, Code: 112345
+
+
+@2017-10-29 14:48:49 INFO  LibServer:106 - Input from 127.0.0.1:51551 
+@2017-10-29 14:48:49 INFO  LibServer:115 - Output to 127.0.0.1:51551 Your input should be Course Code:
+
+@2017-10-29 14:48:50 INFO  LibServer:106 - Input from 127.0.0.1:51551 null
+@2017-10-29 14:48:50 INFO  LibServer:115 - Output to 127.0.0.1:51551 Your input should be Course Code:
+
+@2017-10-29 14:48:51 INFO  ServerThread:60 - Class: ServerThread: Exception thrown : Connection reset 
+
 @
