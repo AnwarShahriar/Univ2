@@ -47,6 +47,7 @@ public class University implements TermEventListener{
 				CourseInteractor interactor = new CourseInteractor(this);
 				Course course = interactor.createCourse(user, title, code, capsize, hasAFinal, numberOfAssignments, numberOfMidTerms, enforcePrereqs, isProjectCourse);
 				CourseTable.getInstance().add(course);
+				logger.info(String.format("Course is created by clerk and added into course table"));
 				return course;
 		}
 		
@@ -128,6 +129,7 @@ public class University implements TermEventListener{
 			student.setEmail(email);
 			student.setPassword(password);
 			StudentTable.getInstance().add(student);
+			logger.info(String.format("Student is created by clerk and added into student table"));
 			return student;
 		}
 		
@@ -192,12 +194,13 @@ public class University implements TermEventListener{
 		}
 		
 		public void cancelCourse(Course course) {
-					List<Student> students = course.students();
-					for (Student s : students) {
-						s.currentCourses().remove(course);
-						s.selectedCourses().remove(course);
-					}
-					course.students().clear();
+				List<Student> students = course.students();
+			for (Student s : students) {
+					s.currentCourses().remove(course);
+					s.selectedCourses().remove(course);
+			}
+				course.students().clear();
+				logger.info(String.format("Course has been canceled by clerk and removed from the course table"));
 		}
 		
 		public void destroyCourse(Course course) {
@@ -224,6 +227,7 @@ public class University implements TermEventListener{
 					for (Course c : courses) {
 						c.students().remove(student);
 					}
+					logger.info(String.format("Student has been deleted by clerk and removed from the student list"));
 		}
 		
 		public boolean dropCourse(Student student, Course course) {

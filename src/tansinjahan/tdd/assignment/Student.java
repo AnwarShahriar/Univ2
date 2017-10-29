@@ -5,6 +5,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.log4j.Logger;
+
+import utilities.Trace;
+
 
 public class Student {
 	private int studentNumber;
@@ -20,6 +24,8 @@ public class Student {
 	private List<Course> completedCourses = new ArrayList<>();
 	private List<Course> selectedCourses = new ArrayList<>();
 	private Map<Course, String> dropedCourseMap = new HashMap<>();
+	
+	Logger logger = Trace.getInstance().getLogger(this);
 	
 	public Student(String name,int studentID, String studentStatus){
 		this.studentNumber=studentID;
@@ -73,6 +79,7 @@ public class Student {
 					}
 		selectedCourses.remove(course);
 		registeredCourses.add(course);
+		logger.info(String.format(" Student registered in the selected course titled: %s", course));
 	}
 
 	@Override
@@ -132,9 +139,9 @@ public class Student {
 		 		String errMsg = String.format("Course %s is already completed and cannot be selected", course.title);
 		 		throw new IllegalArgumentException(errMsg);
 		 	}
-		 		
-		 		selectedCourses.add(course);
-		 	}
+		 selectedCourses.add(course);
+		 logger.info(String.format(" Student selected the course: %s", course));
+	}
 		 
 	public List<Course> selectedCourses() {
 		 		return selectedCourses;
@@ -144,6 +151,7 @@ public class Student {
 		 if (registeredCourses.contains(course)) {
 		 		registeredCourses.remove(course);
 		 		dropedCourseMap.put(course, "DR");
+		 		logger.info(String.format(" Student dropped the course titled: %s", course));
 		 		return true;
 		 	}
 		 		return false;
