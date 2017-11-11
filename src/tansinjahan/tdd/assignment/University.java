@@ -93,6 +93,7 @@ public class University implements TermEventListener{
 		public void onTermEnded() {
 			 	termState = TermState.TERM_END_STATE;
 			 	System.out.println(termState.name());
+			 	
 		}
 			 
 		public String getName() {
