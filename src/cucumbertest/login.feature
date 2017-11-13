@@ -24,6 +24,6 @@ Feature: Login
     Then the student is logged in
     
     Examples:
-    | email | password |
-    | jim@gotham | 12345 |
-    | lee@gotham | 12345 |
+    |email|password|
+    |jim@gotham|12345|
+    |lee@gotham|12345|

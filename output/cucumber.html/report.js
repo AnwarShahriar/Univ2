@@ -271,8 +271,7 @@ formatter.match({
   "location": "cucumberStepDefinitions.the_student_is_logged_in()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: \nExpected: \u003c3\u003e\n     but: was \u003c15\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat cucumbertest.cucumberStepDefinitions.the_student_is_logged_in(cucumberStepDefinitions.java:60)\r\n\tat ✽.the student is logged in(cucumbertest/login.feature:24)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Student login success",
@@ -317,7 +316,6 @@ formatter.match({
   "location": "cucumberStepDefinitions.the_student_is_logged_in()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: \nExpected: \u003c3\u003e\n     but: was \u003c15\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat cucumbertest.cucumberStepDefinitions.the_student_is_logged_in(cucumberStepDefinitions.java:60)\r\n\tat ✽.the student is logged in(cucumbertest/login.feature:24)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 });

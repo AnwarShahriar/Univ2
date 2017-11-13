@@ -19,7 +19,18 @@ public class cucumberStepDefinitions {
 	
 	@Given("^the university is initialized$")
 	public void the_university_is_initialized() throws Exception {
-		University.getInstance();
+		StudentTable.getInstance().clear();
+		Student student1 = new Student("Jim", 11111,"Full time");
+ 		student1.setEmail("jim@gotham");
+ 		student1.setPassword("12345");
+		StudentTable.getInstance().add(student1);
+		
+		Student student2 = new Student("Lee", 22222,"Full time");
+ 		student2.setEmail("lee@gotham");
+ 		student2.setPassword("12345");
+ 		StudentTable.getInstance().add(student2);
+ 		
+ 		University.getInstance();
 		state = handler.processInput("", InputHandler.WAITING).getState();
 	}
 	
@@ -49,7 +60,7 @@ public class cucumberStepDefinitions {
 		
 	}
 
-	@When("^the student logs in with(.*)(.*)$")
+	@When("^the student logs in with (.*) (.*)$")
 	public void the_student_logs_in_with_(String email,String pass) throws Exception {
 		state = handler.processInput(email +","+ pass, state).getState();
 		System.out.println(state);
