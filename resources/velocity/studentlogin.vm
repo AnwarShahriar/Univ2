@@ -1,4 +1,4 @@
-#parse("/velocity/home.vm")
+#parse("/velocity/studentlogin.vm")
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,17 +25,19 @@
                 
                 <div class="row justify-content-center" style="margin-top: 32px">
                     <div class="col-auto">
-                    	<a href="/clerklogin">
-                        	<button type="button" class="btn btn-primary" style="width: 256px">Clerk</button>
-                    	</a>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" style="width: 256px">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center" style="margin-top: 32px">
+                    <div class="col-auto">
+                        <input type="password" class="form-control" id="password" placeholder="Password" style="width: 256px">
                     </div>
                 </div>
                 
                 <div class="row justify-content-center" style="margin-top: 32px">
                     <div class="col-auto">
-                    	<a href="/studentlogin">
-                        	<button type="button" class="btn btn-primary" style="width: 256px">Student</button>
-                    	</a>
+                        <button type="button" class="btn btn-primary" style="width: 256px">Submit</button>
                     </div>
                 </div>
             </div>
@@ -43,4 +45,3 @@
     </div>
 </body>
 </html>
-

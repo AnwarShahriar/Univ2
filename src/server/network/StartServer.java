@@ -27,8 +27,21 @@ public class StartServer {
 					
 					@Override
 					public void handle(Context ctx) throws Exception {
-						Map<String, String> map = new HashMap<String, String>();
 						ctx.renderVelocity("/velocity/home.vm");
+					}
+				});
+				app.get("/clerklogin", new Handler() {
+					
+					@Override
+					public void handle(Context ctx) throws Exception {
+						ctx.renderVelocity("/velocity/clientlogin.vm");
+					}
+				});
+				app.get("/studentlogin", new Handler() {
+					
+					@Override
+					public void handle(Context ctx) throws Exception {
+						ctx.renderVelocity("/velocity/studentlogin.vm");
 					}
 				});
 			}
